@@ -1,37 +1,66 @@
 <header>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="top-navbar navbar navbar-expand-xl navbar-light fixed-top d-flex flex-column">
+        <div class="container-fluid nav-wrapper">
+            <a class="navbar-brand pt-0 align-self-center" href="../index.html">
+                <img src="img/logo.svg" alt="logo" class="navbar-brand-img d-lg-block d-none">
+                <img src="img/logo-mobile.svg" alt="logo" class="navbar-brand-img d-lg-none d-block">
+            </a>
+            <button class="navbar-toggler border-0 collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-collapsed font-size-30">
+                    <img src="img/menu.svg" alt="Menu">
+                </span>
+                <span class="toggler-expanded font-size-30">
+                    <img src="img/close.svg" alt="Close" class="me-1">
+                </span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="navbar-collapse disable-animation collapse nav-menu-wrapper" id="navbarCollapse">
+                <!-- Navigation -->
+                <ul class="navbar-nav navigation-menu">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                        <a class="nav-link" href="#">
+                            <span class="label">Staatliche Förderung</span>
                         </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="#">
+                            <span class="label">Vorteile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="label">Shop</span>
+                        </a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
+                <a href="#" class="btn btn-primary small mx-4">Ersparnisrechner</a>
+
+                <ul class="navbar-nav navigation-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="label">Über uns</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="label">Kontakt</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="label">FAQ</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="d-xl-block d-none align-items-center">
+                    <a href="#" title="Artboard" class="me-lg-4">
+                        <span><icon class="icon icon-artboard"></icon></span>
+                    </a>
+                    <a href="#" title="User">
+                        <span><icon class="icon icon-user"></icon></span>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>

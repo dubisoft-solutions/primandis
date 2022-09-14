@@ -26,6 +26,8 @@ $font-icons-family-name: "IconsFont";
 }
 
 $icon-name-arrow-down: "\E001"; 
+$icon-name-artboard: "\E002"; 
+$icon-name-user: "\E003"; 
 
 
 @function icon-char($filename) {
@@ -33,6 +35,12 @@ $icon-name-arrow-down: "\E001";
 
 	@if $filename == arrow-down {
 		$char: "\E001";
+	}
+	@if $filename == artboard {
+		$char: "\E002";
+	}
+	@if $filename == user {
+		$char: "\E003";
 	}
 
 	@return $char;
@@ -51,4 +59,10 @@ $icon-name-arrow-down: "\E001";
 
 .icon-arrow-down {
 	@include icon(arrow-down);
+}
+.icon-artboard {
+	@include icon(artboard);
+}
+.icon-user {
+	@include icon(user);
 }
