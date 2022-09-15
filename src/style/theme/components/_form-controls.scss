@@ -1,0 +1,14 @@
+.form-control {
+    border: none;
+    border-bottom: 1px solid $black-74;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    font-size: 1.25rem;
+    color: $black-45;
+    padding-top: .25rem;
+}

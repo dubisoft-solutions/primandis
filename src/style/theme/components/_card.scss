@@ -18,4 +18,13 @@
         padding-top: 0;
         padding-bottom: 4.063rem;
     }
+    &.workers {
+        .card-header {
+            padding: 1.438rem 1.563rem;
+            background-color: $blue;
+        }
+        .card-body {
+            padding: 5.313rem 4.188rem 4.688rem 4.188rem;
+        }
+    }
 }

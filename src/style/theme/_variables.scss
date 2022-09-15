@@ -6,6 +6,8 @@ $light-blue: #D6F0FF;
 $blue: #00AEEA;
 $gray-246: #F6F6F6;
 $gray: #F1F1F1;
+$black-78: #1C2C4E;
+$black-74: #4A4A4A;
 $black-89: #002B59;
 $black-45: #2D2D2D;
 $black: #000000;
@@ -19,8 +21,9 @@ $headings-font-weight: 600;
 $fw-medium: 500;
 $font-sizes: ( 1: 4.375rem, 2: 3.75rem, 3: 3.125rem, 4: 2.813rem, 5: 2rem, 6: 2.5rem, 7: 1.875rem, 8: 1.688rem, 9: 1.625rem, 10: 1.563rem, 11: 1.25rem, 12: 1.563rem);
 $spacer: 1rem;
-$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 3.375, 7: $spacer * 3.75, 8: $spacer * 4, 9: $spacer * 4.06, 10: $spacer * 4.1875, 11: $spacer * 4.5, 12: $spacer * 4.625, 13: $spacer * 4.8125, 14: $spacer * 5.5, 15: $spacer * 5.625, 16: $spacer * 5.8125, 17: $spacer * 6, 18: $spacer * 6.375, 19: $spacer * 7.06, 20: $spacer * 7.3125, 21: $spacer * 7.875, 22: $spacer * 8, 23: $spacer * 8.125, 24: $spacer * 8.375, 25: $spacer * 8.625, 26: $spacer * 10.1875, 27: $spacer * 15, 28: $spacer * 15.625, 29: $spacer * 15.75, 30: $spacer * 19.5, );
+$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 3.375, 7: $spacer * 3.75, 8: $spacer * 4, 9: $spacer * 4.06, 10: $spacer * 4.1875, 11: $spacer * 4.5, 12: $spacer * 4.625, 13: $spacer * 4.8125, 14: $spacer * 5.5, 15: $spacer * 5.625, 16: $spacer * 5.8125, 17: $spacer * 6, 18: $spacer * 6.375, 19: $spacer * 7.06, 20: $spacer * 7.3125, 21: $spacer * 7.875, 22: $spacer * 8, 23: $spacer * 8.125, 24: $spacer * 8.375, 25: $spacer * 8.625, 26: $spacer * 10.1875, 27: $spacer * 15, 28: $spacer * 15.625, 29: $spacer * 15.75, 30: $spacer * 19.5, 31: $spacer * 12.5, 32: $spacer * 9.68);
 $box-shadow-sm: 0 2px 5px rgba(0, 0, 0, .16) !default;
+$box-shadow-md: 2px 2px 5px rgba(0, 0, 0, .16) !default;
 // buttons
 $btn-padding-y: 2.5rem;
 $btn-padding-x: 6.25rem;
@@ -31,6 +34,10 @@ $btn-border-radius: 0;
 $btn-color: $white;
 $btn-bg: $blue;
 $btn-box-shadow: $box-shadow-sm;
+// form-controls 
+$input-font-size: 1.25rem;
+$input-border-color: $black-74;
+$input-border-radius: 0;
 // nav 
 $nav-link-font-weight: normal;
 $nav-link-font-size: .875rem;
@@ -40,3 +47,17 @@ $card-box-shadow: $box-shadow-sm;
 $card-border-radius: 0;
 $card-spacer-y: 4.813rem;
 $card-spacer-x: 2.813rem;
+// accordion 
+$accordion-bg: $white;
+$accordion-color: $black-45;
+$accordion-button-bg: $white;
+$accordion-button-color: $black;
+$font-size-base: 1.25rem;
+$accordion-border-radius: 0;
+$accordion-button-focus-box-shadow: $box-shadow-sm;
+$accordion-button-active-color: $white;
+$accordion-button-active-bg: $blue;
+$accordion-button-padding-y: 1.625rem;
+$accordion-button-padding-x: 2.5rem;
+$accordion-body-padding-y: 1.563rem;
+$accordion-body-padding-x: 2.5rem;

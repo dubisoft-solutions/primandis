@@ -1,0 +1,19 @@
+.accordion-button {
+    font-weight: bold;
+    border: none!important;
+    box-shadow: $box-shadow-md;
+    &::after {
+        display: none;
+    }
+}
+
+.accordion-header {
+    border: none!important;
+    box-shadow: $box-shadow-md;
+}
+
+.accordion-body {
+    box-shadow: $box-shadow-md;
+    border: none!important;
+    background-color: $white;
+}
