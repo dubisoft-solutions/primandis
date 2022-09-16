@@ -5,8 +5,8 @@ $scrolled-navbar-sm-height: 2.625rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .16);
     background-color: $gray;
     &>.nav-wrapper {
-        padding-top: .938rem;
-        padding-bottom: .938rem;
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
     }
     @include media-breakpoint-down(xl) {
         width: 100%;
@@ -18,11 +18,11 @@ $scrolled-navbar-sm-height: 2.625rem;
         }
     }
     .navbar-nav>li {
-        margin-left: 2.188rem;
-        margin-right: 2.188rem;
-        margin-bottom: 0;
-        @include media-breakpoint-down(xl) {
-            margin-bottom: .625rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        @include media-breakpoint-up(xxl) {
+            margin-left: 2.188rem;
+            margin-right: 2.188rem;
         }
         &>.nav-link {
             padding: 0;

@@ -1,3 +1,22 @@
 a {
     text-decoration: none;
 }
+
+@include media-breakpoint-down(md) {
+    h1 {
+        font-size: 3.063rem!important;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 2.25rem!important;
+    }
+}
+
+@include media-breakpoint-between(md, xxl) {
+    h1 {
+        font-size: 8rem!important;
+    }
+    h2 {
+        font-size: 2.5rem!important;
+    }
+}

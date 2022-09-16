@@ -4,25 +4,36 @@
     padding: 16.438rem 0 22rem 0;
 }
 
-.image-container {
+.parent {
     position: relative;
     width: 100%;
-    height: 100%;
+    img {
+        display: block;
+        width: 100%;
+    }
+    div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        color: #fff;
+        background: rgba(112, 112, 112, 0.8);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        font-size: 2.813rem;
+    }
 }
 
-.image-container .after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    color: #FFF;
-}
-
-.image-container:hover .after {
-    display: block;
-    background: rgba(112, 112, 112, .8);
+.employees {
+    @include media-breakpoint-down(md) {
+        h2 {
+            font-size: 2rem!important;
+        }
+    }
 }
 
 .state-funding {
@@ -30,6 +41,31 @@
         position: absolute;
         right: 0;
         top: 2.813rem;
+        width: 100%;
+        @include media-breakpoint-down(md) {
+            width: 50%;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        h2 {
+            font-size: 2.375rem!important;
+        }
+    }
+}
+
+.benefits-workers {
+    .bg-decor {
+        position: absolute;
+        right: 0;
+        z-index: 0;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        h2 {
+            font-size: 2.875rem!important;
+        }
     }
 }
 
@@ -49,7 +85,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        z-index: -1;
+        z-index: 0;
     }
 }
 
@@ -60,6 +96,19 @@
         bottom: 0;
         right: 0;
         z-index: -1;
+    }
+    @include media-breakpoint-down(md) {
+        h2 {
+            font-size: 1.75rem!important;
+        }
+    }
+}
+
+.contacts {
+    @include media-breakpoint-down(md) {
+        .fs-9 {
+            font-size: 1.125rem!important;
+        }
     }
 }
 
@@ -76,10 +125,28 @@
         position: absolute;
         top: 0;
         z-index: -1;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
     }
 }
 
 .footer {
     background-color: $black-78;
     padding: 3.25rem 0 2.25rem 0;
+    @include media-breakpoint-down(md) {
+        padding: 1.25rem 0 .625rem 0;
+    }
+    .mail-link {
+        font-size: 2.5rem;
+        @include media-breakpoint-down(md) {
+            font-size: .875rem;
+        }
+    }
+    .copyright-text {
+        font-size: 1.25rem;
+        @include media-breakpoint-down(md) {
+            font-size: .625rem;
+        }
+    }
 }

@@ -11,7 +11,6 @@ ul {
 
 .list-items {
     padding-left: 8.5rem;
-    margin-bottom: 3.125rem!important;
     li {
         font-weight: normal;
         font-size: 1.563rem;
@@ -39,10 +38,16 @@ ul {
 
 @include media-breakpoint-down(lg) {
     .list-items {
-        margin-top: 1.5rem!important;
-        margin-bottom: 1.875rem!important;
+        padding-left: 0;
+        margin-bottom: 2.5rem;
         li {
-            margin-bottom: .625rem;
+            font-size: .875rem;
+            margin-bottom: 1.25rem;
+            &::before {
+                font-size: 1.563rem;
+                margin-left: 0;
+                padding-right: 1.188rem;
+            }
         }
     }
 }

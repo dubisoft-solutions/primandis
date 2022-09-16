@@ -5,10 +5,25 @@
 
 textarea {
     resize: none;
+    &::placeholder {
+        font-size: .75rem;
+    }
+    &.form-control {
+        border: 1px solid $black-45;
+    }
 }
 
 label {
     font-size: 1.25rem;
     color: $black-45;
     padding-top: .25rem;
+    @include media-breakpoint-down(md) {
+        font-size: .75rem;
+    }
+}
+
+.form-check-label {
+    @include media-breakpoint-down(md) {
+        font-size: .625rem;
+    }
 }

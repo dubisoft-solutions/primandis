@@ -4,6 +4,13 @@
     box-shadow: $box-shadow-md;
     &::after {
         display: none;
+        @include media-breakpoint-down(md) {
+            display: block;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        font-size: .75rem;
+        padding: .75rem .563rem;
     }
 }
 
@@ -16,4 +23,8 @@
     box-shadow: $box-shadow-md;
     border: none!important;
     background-color: $white;
+    @include media-breakpoint-down(md) {
+        font-size: .75rem;
+        padding: .688rem .563rem;
+    }
 }
