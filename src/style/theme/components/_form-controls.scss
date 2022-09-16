@@ -6,7 +6,10 @@
 textarea {
     resize: none;
     &::placeholder {
-        font-size: .75rem;
+        font-size: 1.25rem;
+        @include media-breakpoint-down(md) {
+            font-size: .75rem;
+        }
     }
     &.form-control {
         border: 1px solid $black-45;

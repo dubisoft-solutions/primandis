@@ -56,8 +56,32 @@
 .benefits-workers {
     .bg-decor {
         position: absolute;
-        right: 0;
         z-index: 0;
+        opacity: .2;
+        &.phone-right {
+            width: 100px;
+            height: 200px;
+            right: 250px;
+            bottom: 700px;
+        }
+        &.bike-right {
+            width: 400px;
+            height: 200px;
+            right: 200px;
+            bottom: 150px;
+        }
+        &.phone-left {
+            width: 100px;
+            height: 200px;
+            left: 250px;
+            top: 100px;
+        }
+        &.bike-left {
+            width: 400px;
+            height: 200px;
+            left: 200px;
+            top: 450px;
+        }
         @include media-breakpoint-down(md) {
             display: none;
         }
