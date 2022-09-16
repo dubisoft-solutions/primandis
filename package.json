@@ -5,7 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.1",
+    "gh-pages": "^4.0.0",
     "gulp-iconfont": "^11.0.1",
     "gulp-iconfont-css": "^3.0.0"
   }
