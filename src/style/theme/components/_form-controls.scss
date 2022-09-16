@@ -1,6 +1,9 @@
 .form-control {
     border: none;
     border-bottom: 1px solid $black-74;
+    &:focus {
+        box-shadow: none;
+    }
 }
 
 textarea {

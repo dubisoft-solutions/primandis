@@ -10,20 +10,22 @@ ul {
 }
 
 .list-items {
-    padding-left: 8.5rem;
+    padding-left: 10.5rem;
     li {
         font-weight: normal;
         font-size: 1.563rem;
         color: $black-45;
         list-style-type: none;
         margin-bottom: 1.25rem;
+        display: flex;
+        align-items: center;
         &::before {
             display: inline;
             @include icon-styles;
             content: icon-char(checkmark-circle);
             font-size: 2.5rem;
             color: $blue;
-            margin-left: -2.188rem;
+            margin-left: -3.75rem;
             padding-right: 1.25rem;
         }
     }
