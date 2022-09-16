@@ -82,7 +82,7 @@
             left: 200px;
             top: 450px;
         }
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(xxl) {
             display: none;
         }
     }
