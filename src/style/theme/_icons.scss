@@ -26,8 +26,9 @@ $font-icons-family-name: "IconsFont";
 }
 
 $icon-name-arrow-down: "\E001"; 
-$icon-name-calculator: "\E002"; 
-$icon-name-checkmark-circle: "\E003"; 
+$icon-name-arrow-up: "\E002"; 
+$icon-name-calculator: "\E003"; 
+$icon-name-checkmark-circle: "\E004"; 
 
 
 @function icon-char($filename) {
@@ -36,11 +37,14 @@ $icon-name-checkmark-circle: "\E003";
 	@if $filename == arrow-down {
 		$char: "\E001";
 	}
-	@if $filename == calculator {
+	@if $filename == arrow-up {
 		$char: "\E002";
 	}
-	@if $filename == checkmark-circle {
+	@if $filename == calculator {
 		$char: "\E003";
+	}
+	@if $filename == checkmark-circle {
+		$char: "\E004";
 	}
 
 	@return $char;
@@ -59,6 +63,9 @@ $icon-name-checkmark-circle: "\E003";
 
 .icon-arrow-down {
 	@include icon(arrow-down);
+}
+.icon-arrow-up {
+	@include icon(arrow-up);
 }
 .icon-calculator {
 	@include icon(calculator);
