@@ -66,4 +66,8 @@
             padding: .281rem .75rem;
         }
     }
+    &:hover,
+    &:focus {
+        --bs-btn-hover-color: #{$white};
+    }
 }
