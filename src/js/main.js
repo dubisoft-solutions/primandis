@@ -8,11 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function initFeedbackNotes() {
+    var sliderContainer = document.querySelector('.feedback-notes-slider');
+    if (!sliderContainer) return;
+
     tns({
-        container: '.feedback-notes-slider',
+        container: sliderContainer,
         items: 3,
         slideBy: 1,
-        autoplay: true,
+        autoplay: false,
         navAsThumbnails: true,
         center: true,
         controls: false,
