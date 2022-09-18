@@ -27,8 +27,10 @@ $font-icons-family-name: "IconsFont";
 
 $icon-name-arrow-down: "\E001"; 
 $icon-name-arrow-up: "\E002"; 
-$icon-name-calculator: "\E003"; 
-$icon-name-checkmark-circle: "\E004"; 
+$icon-name-awesome-quote-left: "\E003"; 
+$icon-name-calculator: "\E004"; 
+$icon-name-checkmark-circle: "\E005"; 
+$icon-name-pagination: "\E006"; 
 
 
 @function icon-char($filename) {
@@ -40,11 +42,17 @@ $icon-name-checkmark-circle: "\E004";
 	@if $filename == arrow-up {
 		$char: "\E002";
 	}
-	@if $filename == calculator {
+	@if $filename == awesome-quote-left {
 		$char: "\E003";
 	}
-	@if $filename == checkmark-circle {
+	@if $filename == calculator {
 		$char: "\E004";
+	}
+	@if $filename == checkmark-circle {
+		$char: "\E005";
+	}
+	@if $filename == pagination {
+		$char: "\E006";
 	}
 
 	@return $char;
@@ -67,9 +75,15 @@ $icon-name-checkmark-circle: "\E004";
 .icon-arrow-up {
 	@include icon(arrow-up);
 }
+.icon-awesome-quote-left {
+	@include icon(awesome-quote-left);
+}
 .icon-calculator {
 	@include icon(calculator);
 }
 .icon-checkmark-circle {
 	@include icon(checkmark-circle);
+}
+.icon-pagination {
+	@include icon(pagination);
 }
