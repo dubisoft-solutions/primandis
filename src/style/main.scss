@@ -156,6 +156,17 @@
     }
 }
 
+.feedback-notes-slider {
+    .slide-item {
+        padding: 1rem;
+    }
+
+    .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active { 
+        padding: 0;
+    }
+    
+}
+
 .footer {
     background-color: $black-78;
     padding: 3.25rem 0 2.25rem 0;
