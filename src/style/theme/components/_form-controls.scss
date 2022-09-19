@@ -29,6 +29,7 @@ label {
 }
 
 .form-check-label {
+    font-size: 1.125rem;
     @include media-breakpoint-down(md) {
         font-size: .625rem;
     }

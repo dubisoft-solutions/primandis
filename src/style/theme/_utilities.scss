@@ -14,7 +14,7 @@
     background-color: $gray-246!important;
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(xl) {
     .w-100-mobile {
         width: 100%;
     }
