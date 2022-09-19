@@ -14,6 +14,10 @@
     background-color: $gray-246!important;
 }
 
+.lh-xl {
+    line-height: $line-height-xl;
+}
+
 @include media-breakpoint-down(xl) {
     .w-100-mobile {
         width: 100%;

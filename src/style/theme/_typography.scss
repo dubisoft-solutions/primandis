@@ -2,6 +2,11 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 1.563rem;
+    color: $black-45;
+}
+
 @include media-breakpoint-down(md) {
     h1 {
         font-size: 3.063rem!important;
