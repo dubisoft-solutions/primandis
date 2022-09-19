@@ -2,6 +2,9 @@
 .hero {
     background-color: $light-blue;
     padding: 16.438rem 0 22rem 0;
+    @include media-breakpoint-down(md) {
+        padding: 21.875rem 0 22.5rem 0;
+    }
 }
 
 .parent {
@@ -10,6 +13,11 @@
     img {
         display: block;
         width: 100%;
+        @include media-breakpoint-down(md) {
+            height: 214px;
+            object-fit: cover;
+            object-position: top;
+        }
     }
     div {
         position: absolute;
@@ -27,6 +35,7 @@
         font-size: 2.813rem;
         @include media-breakpoint-down(md) {
             font-size: 2rem;
+            height: 214px;
         }
     }
 }
