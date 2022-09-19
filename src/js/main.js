@@ -16,7 +16,7 @@ function initFeedbackNotes() {
         items: 3,
         slideBy: 1,
         autoplay: false,
-        navAsThumbnails: true,
+        navAsThumbnails: false,
         center: true,
         controls: false,
         autoplayButtonOutput: false,

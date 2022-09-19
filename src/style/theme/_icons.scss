@@ -30,7 +30,7 @@ $icon-name-arrow-up: "\E002";
 $icon-name-awesome-quote-left: "\E003"; 
 $icon-name-calculator: "\E004"; 
 $icon-name-checkmark-circle: "\E005"; 
-$icon-name-pagination: "\E006"; 
+$icon-name-percent: "\E006"; 
 
 
 @function icon-char($filename) {
@@ -51,7 +51,7 @@ $icon-name-pagination: "\E006";
 	@if $filename == checkmark-circle {
 		$char: "\E005";
 	}
-	@if $filename == pagination {
+	@if $filename == percent {
 		$char: "\E006";
 	}
 
@@ -84,6 +84,6 @@ $icon-name-pagination: "\E006";
 .icon-checkmark-circle {
 	@include icon(checkmark-circle);
 }
-.icon-pagination {
-	@include icon(pagination);
+.icon-percent {
+	@include icon(percent);
 }

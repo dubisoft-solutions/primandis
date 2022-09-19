@@ -1,4 +1,16 @@
 @import 'tiny-slider/src/tiny-slider.scss';
 .tns-nav {
     text-align: center;
+    button {
+        background-color: transparent;
+        border: 0;
+        padding: 0 1.563rem;
+        &::after {
+            display: block;
+            @include icon-styles;
+            content: icon-char(percent);
+            color: $blue;
+            font-size: 2.5rem;
+        }
+    }
 }

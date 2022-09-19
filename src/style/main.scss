@@ -25,13 +25,8 @@
         align-items: center;
         font-weight: 300;
         font-size: 2.813rem;
-    }
-}
-
-.employees {
-    @include media-breakpoint-down(md) {
-        h2 {
-            font-size: 2rem!important;
+        @include media-breakpoint-down(md) {
+            font-size: 2rem;
         }
     }
 }
@@ -44,11 +39,6 @@
         width: 100%;
         @include media-breakpoint-down(md) {
             width: 50%;
-        }
-    }
-    @include media-breakpoint-down(md) {
-        h2 {
-            font-size: 2.375rem!important;
         }
     }
 }
@@ -87,11 +77,6 @@
             display: none;
         }
     }
-    @include media-breakpoint-down(md) {
-        h2 {
-            font-size: 2.875rem!important;
-        }
-    }
 }
 
 .own-shop {
@@ -118,21 +103,14 @@
     position: relative;
     .bg-decor {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 100px;
+        right: 300px;
         z-index: -1;
-    }
-    @include media-breakpoint-down(md) {
-        h2 {
-            font-size: 1.75rem!important;
-        }
-    }
-}
-
-.contacts {
-    @include media-breakpoint-down(md) {
-        .fs-9 {
-            font-size: 1.125rem!important;
+        opacity: .1;
+        width: 450px;
+        height: 305px;
+        @include media-breakpoint-down(xxl) {
+            display: none;
         }
     }
 }
@@ -160,11 +138,9 @@
     .slide-item {
         padding: 1rem;
     }
-
-    .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active { 
+    .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active {
         padding: 0;
     }
-    
 }
 
 .footer {
