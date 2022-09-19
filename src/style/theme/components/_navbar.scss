@@ -114,7 +114,7 @@ $scrolled-navbar-sm-height: 2.625rem;
             &.collapsing {
                 opacity: 1;
                 background-color: $gray;
-                display: flex;
+                display: block;
                 .navbar-nav>li {
                     .nav-link {
                         color: white;
