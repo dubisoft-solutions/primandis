@@ -14,6 +14,12 @@
     background-color: $gray-246!important;
 }
 
+@include media-breakpoint-down(lg) {
+    .w-100-mobile {
+        width: 100%;
+    }
+}
+
 @include media-breakpoint-down(md) {
     .fs-2 {
         font-size: 3.063rem!important;
