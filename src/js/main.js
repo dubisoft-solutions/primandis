@@ -21,5 +21,7 @@ function initFeedbackNotes() {
         controls: false,
         autoplayButtonOutput: false,
         navPosition: 'bottom',
+        autoHeight: true,
+        mouseDrag: true,
     });
 }

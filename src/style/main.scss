@@ -163,11 +163,20 @@
 }
 
 .feedback-notes-slider {
+    &.tns-slider {
+        display: flex;
+        align-items: stretch;
+    }
+    
     .slide-item {
-        padding: 1rem;
+        padding: 1.5rem;
+        &>div {
+            height: 100%;
+        }
     }
     .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active {
-        padding: 0;
+        padding: 0.5rem 0;
+
     }
 }
 
