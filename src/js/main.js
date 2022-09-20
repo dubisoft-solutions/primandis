@@ -23,5 +23,23 @@ function initFeedbackNotes() {
         navPosition: 'bottom',
         autoHeight: true,
         mouseDrag: true,
+        gutter: 20,
+        responsive: {
+            0: {
+                items: 1,
+                slideBy: 1,
+                center: true,
+                autoHeight: true,
+                edgePadding: 100,
+                navAsThumbnails: false,
+            },
+            1200: {
+                edgePadding: 0,
+                items: 3,
+                slideBy: 1,
+                center: true,
+                autoHeight: true,
+            }
+        }
     });
 }
