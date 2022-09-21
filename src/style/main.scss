@@ -215,11 +215,25 @@
 }
 
 .feedback-notes-slider {
-    .slide-item {
-        padding: 1rem;
+    &.tns-slider {
+        display: flex;
+        align-items: stretch;
     }
-    .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active {
-        padding: 0;
+    
+    .slide-item {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        opacity: 0.7;
+        transition: padding 0.2s;
+        
+        &>div {
+            height: 100%;
+        }
+    }
+    .tns-slide-active.center {
+        padding: 0.5rem 0;
+        opacity: 1;
+        transition: padding 0.2s;
     }
 }
 
