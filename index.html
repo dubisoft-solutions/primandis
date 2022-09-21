@@ -9,6 +9,7 @@
 
 <body class="index">
 
+    <!-- Header -->
     <header>
         <nav class="top-navbar navbar navbar-expand-xl navbar-light fixed-top d-flex flex-column">
             <div class="container nav-wrapper">
@@ -78,7 +79,7 @@
         </nav>
     </header>
 
-    <!-- Main section -->
+    <!-- Main content -->
     <section class="hero">
         <div class="container">
             <div class="row">
@@ -90,11 +91,12 @@
     </section>
 
     <section class="staff pt-30 pb-27">
-        <img src="img/staff-bg.svg" alt="Wir machen Mitarbeiter" class="bg-decor">
+        <img src="img/staff-bg.svg" alt="Wir machen Mitarbeiter" class="bg-decor d-lg-block d-none">
+        <img src="img/staff-bg-mobile.svg" alt="Wir machen Mitarbeiter" class="bg-decor d-lg-none d-block">
         <div class="container position-relative">
             <div class="row justify-content-center">
                 <div class="col-11 text-center">
-                    <h1 class="text-secondary mb-13"><span class="fs-2 d-block fw-normal">Wir machen Mitarbeiter</span><span class="text-uppercase">glücklich</span></h1>
+                    <h1 class="text-secondary mb-13"><span class="fs-2 d-block fw-lg-normal fw-bold">Wir machen Mitarbeiter</span><span class="text-uppercase d-lg-block d-none">glücklich</span><span class="d-lg-none d-block fw-bold">glücklich</span></h1>
                     <div class="text-center">
                         <a href="#" class="btn btn-primary btn-xl d-lg-inline d-block">… und wie machen wir das?</a>
                     </div>
@@ -115,16 +117,198 @@
                 <div class="col-lg-4 mb-5">
                     <div class="parent mb-11">
                         <img src="img/employer.png" alt="Arbeitgeber-information">
-                        <div>Arbeitgeber-information</div>
+                        <div class="fs-4">Arbeitgeber-<br>information</br>
+                        </div>
                     </div>
                     <a href="#" class="btn btn-primary btn-md d-block">Arbeitgeber</a>
                 </div>
                 <div class="col-lg-4 mb-5">
                     <div class="parent mb-11">
                         <img src="img/employer-two.png" alt="Arbeitnehmer-information">
-                        <div>Arbeitnehmer-information</div>
+                        <div class="fs-4">Arbeitnehmer-<br>information</br>
+                        </div>
                     </div>
                     <a href="#" class="btn btn-primary btn-md d-block">Arbeitgeber</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback-notes bg-primary pt-15 pb-19">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-secondary mb-4">Das sagen die Mitarbeiter</h4>
+                        <p class="text-dark fw-light fs-3 mb-12">"Die Hälfte gespart, schnell geliefert."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback-notes-slider">
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Ich habe mir ein iPhone 12 über primandis geholt - ich spare richtig, mein Chef gibt etwas dazu - ich kann primandis nur weiterempfehlen.</p>
+                        <p class="fs-10 fw-bold text-center">Karin, 31, Mersburg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Super einfach, riesen Ersparnis - warum gibts das nicht schon viel länger?!
+                        </p>
+                        <p class="fs-10 fw-bold text-center">Philipp, 36, Nürnberg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Lukas, 42, Hamburg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Ivan, 35, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center pb-4 mb-3">
+                            <icon class="icon icon-awesome-quote-left text-muted fs-13"></icon>
+                        </div>
+                        <p class="fs-10 mb-4 pb-3">Bei uns sind alle von dem Modell begeistert - inklusive meine Frau mit ihrem neuen iPad</p>
+                        <p class="fs-10 fw-bold text-center">Anna, 29, Netherlands</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,7 +385,7 @@
                         <li>Gilt auch für alle Familienmitglieder</li>
                     </ul>
 
-                    <p class="fw-light fs-9 mb-lg-4">Begeistert? <span class="d-lg-inline d-block">Nehmen Sie Kontakt mit uns auf!</span></p>
+                    <p class="fw-light fs-10 pb-lg-4">Begeistert? <span class="d-lg-inline d-block">Nehmen Sie Kontakt mit uns auf!</span></p>
                     <div class="d-lg-inline d-block">
                         <a href="#" class="btn btn-primary btn-sm d-lg-inline d-block">Kontakt</a>
                     </div>
@@ -248,7 +432,8 @@
     </section>
 
     <section class="own-shop bg-primary pt-22 pb-20 position-relative">
-        <img src="img/carts-bg.svg" alt="Ihr eigener Shop" class="bg-decor">
+        <img src="img/carts-bg.svg" alt="Ihr eigener Shop" class="bg-decor d-lg-block d-none">
+        <img src="img/carts-bg-mobile.svg" alt="Ihr eigener Shop" class="bg-decor d-lg-none d-block">
         <div class="container position-relative">
             <div class="row">
                 <div class="col-lg-12">
@@ -265,7 +450,6 @@
 
     <section class="savings-calculator pt-25 pb-31 position-relative">
         <div class="container">
-            <!-- <img src="img/saving-calculator-bg.svg" alt="Der Ersparnisrechner" class="bg-decor"> -->
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="text-primary mb-8">Der Ersparnisrechner</h2>
@@ -277,12 +461,13 @@
                     </ul>
                     <p class="fs-6 fw-light text-primary mb-13">Die durchschnittliche Ersparnis liegt bei 41,3%.</p>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-xl-4">
                             <a href="#" class="btn btn-primary btn-lg d-flex justify-content-center align-items-center text-center"><span>Ersparnisrechner</span><icon class="icon-calculator fs-9 ps-4 d-grid"></icon></a>
                         </div>
                     </div>
                     <p class="pt-4 mt-2">* Ihre eingegeben Daten werden selbstverständlich nicht gespeichert und dienen nur Ihrer aktuellen Berechnung.</p>
                 </div>
+                <img src="img/percent-lightblue.svg" alt="Der Ersparnisrechner" class="bg-decor">
             </div>
         </div>
     </section>
@@ -317,9 +502,9 @@
                     <h2 class="text-secondary mb-lg-3 mb-4 pb-lg-0 pb-3">Kontakt</h2>
                     <p class="fs-6 fw-light text-secondary mb-32 d-lg-block d-none">Schreiben Sie uns!</p>
 
-                    <p class="text-secondary fs-9 mb-4 pb-lg-2 pb-0">Wir freuen uns Sie bei Ihrem Projekt</p>
+                    <p class="text-secondary fs-10 mb-4 pb-lg-2 pb-0">Wir freuen uns Sie bei Ihrem Projekt</p>
                     <p class="text-secondary fs-3 mb-4 pb-lg-2 pb-0">„Wir machen Mitarbeiter glücklich“</p>
-                    <p class="text-secondary fs-9">zu unterstützen.</p>
+                    <p class="text-secondary fs-10">zu unterstützen.</p>
                 </div>
 
                 <div class="col-lg-6">
@@ -436,7 +621,7 @@
     <!-- footer -->
     <footer class="footer">
         <div class="container">
-            <div class="row justify-content-center mb-5">
+            <div class="row justify-content-center mb-lg-5 mb-0 d-xl-block d-none">
                 <div class="col-lg-12 text-center pb-3">
                     <icon class="icon-arrow-up text-white"></icon>
                 </div>
@@ -447,8 +632,11 @@
                     <a href="mailto:info@primandis.de" class="text-white fw-bold mail-link">info@primandis.de</a>
                 </div>
     
-                <ul class="d-flex justify-content-between order-xl-1 order-0 mb-xl-0 mb-4 pb-xl-0 pb-2">
-                    <li class="text-white pe-4"><a href="#" class="text-white fs-11 lh-lg">Impressum</a></li>
+                <ul class="d-flex justify-content-between order-xl-1 order-0 mb-xl-0 mb-4 pb-xl-0 pb-2 w-100-mobile">
+                    <li class="text-white pe-4"><a href="imprint.html" class="text-white fs-11 lh-lg">Impressum</a></li>
+                    <li class="d-xl-none d-block">
+                        <icon class="icon-arrow-up text-white"></icon>
+                    </li>
                     <li class="text-white ps-4"><a href="#" class="text-white fs-11 lh-lg">Datenschutz</a></li>
                 </ul>
                 <p class="copyright-text text-white lh-lg text-xl-end text-center order-xl-2 order-2 mb-0">© 2021 primandis.de - wir machen Mitarbeiter glücklich</p>
