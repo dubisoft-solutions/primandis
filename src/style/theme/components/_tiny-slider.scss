@@ -1,16 +1,40 @@
 @import 'tiny-slider/src/tiny-slider.scss';
+
 .tns-nav {
     text-align: center;
+    margin-top: 3rem;
     button {
         background-color: transparent;
         border: 0;
         padding: 0 1.563rem;
         &::after {
             display: block;
-            @include icon-styles;
-            content: icon-char(percent);
-            color: $blue;
-            font-size: 2.5rem;
+            content: "";
+            // width: 92px;
+            // height: 65px;
+            width: 58px;
+            height: 39px;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Ebene_2' data-name='Ebene 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 93.19 68.15'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23D6F0FF; %7D .cls-2 %7B fill: %2300a9e0; %7D %3C/style%3E%3C/defs%3E%3Cg id='Ebene_1-2' data-name='Ebene 1'%3E%3Cg%3E%3Cpath class='cls-2' d='M73.65,29.07c-.87,0-1.72,.06-2.55,.17l13.65-21.57,4.85-7.67H46.7l-1.47,2.32-7.09,11.22C35.6,5.69,28.22,0,19.54,0,8.77,0,0,8.76,0,19.54s8.77,19.54,19.54,19.54c.87,0,1.72-.06,2.56-.17l-13.65,21.57-4.85,7.67H46.48l1.47-2.33,7.09-11.22c2.54,7.85,9.92,13.55,18.6,13.55,10.78,0,19.54-8.77,19.54-19.54s-8.76-19.54-19.54-19.54'/%3E%3Cpath class='cls-1' d='M34.08,19.54c0-8.03-6.51-14.54-14.54-14.54S5,11.51,5,19.54s6.51,14.54,14.54,14.54,14.54-6.51,14.54-14.54m15.38-14.54L12.67,63.15h31.06L80.51,5h-31.05Zm24.19,29.08c-8.03,0-14.54,6.51-14.54,14.54s6.51,14.54,14.54,14.54,14.54-6.51,14.54-14.54-6.51-14.54-14.54-14.54'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        // &:first-child  {
+        //     &::after {
+        //         width: 58px;
+        //         height: 39px;
+        //     }
+        // }
+
+        // &[style*="display: none"]:last-child  {
+        //     &::after {
+        //         width: 58px;
+        //         height: 39px;
+        //     }
+        // }
+        &.tns-nav-active {
+            &::after {
+                background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Ebene_2' data-name='Ebene 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 93.19 68.15'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23D6F0FF; %7D .cls-2 %7B fill: %23023467; %7D %3C/style%3E%3C/defs%3E%3Cg id='Ebene_1-2' data-name='Ebene 1'%3E%3Cg%3E%3Cpath class='cls-2' d='M73.65,29.07c-.87,0-1.72,.06-2.55,.17l13.65-21.57,4.85-7.67H46.7l-1.47,2.32-7.09,11.22C35.6,5.69,28.22,0,19.54,0,8.77,0,0,8.76,0,19.54s8.77,19.54,19.54,19.54c.87,0,1.72-.06,2.56-.17l-13.65,21.57-4.85,7.67H46.48l1.47-2.33,7.09-11.22c2.54,7.85,9.92,13.55,18.6,13.55,10.78,0,19.54-8.77,19.54-19.54s-8.76-19.54-19.54-19.54'/%3E%3Cpath class='cls-1' d='M34.08,19.54c0-8.03-6.51-14.54-14.54-14.54S5,11.51,5,19.54s6.51,14.54,14.54,14.54,14.54-6.51,14.54-14.54m15.38-14.54L12.67,63.15h31.06L80.51,5h-31.05Zm24.19,29.08c-8.03,0-14.54,6.51-14.54,14.54s6.51,14.54,14.54,14.54,14.54-6.51,14.54-14.54-6.51-14.54-14.54-14.54'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            }
         }
     }
 }
