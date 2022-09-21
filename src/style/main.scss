@@ -219,13 +219,11 @@
         display: flex;
         align-items: stretch;
     }
-    
     .slide-item {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         opacity: 0.7;
         transition: padding 0.2s;
-        
         &>div {
             height: 100%;
         }
@@ -234,6 +232,24 @@
         padding: 0.5rem 0;
         opacity: 1;
         transition: padding 0.2s;
+    }
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin-bottom: 108px;
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    @include media-breakpoint-down(md) {
+        margin-bottom: 60px;
     }
 }
 

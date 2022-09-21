@@ -1,6 +1,7 @@
 .form-control {
     border: none;
     border-bottom: 1px solid $black-74;
+    background-color: transparent;
     &:focus {
         box-shadow: none;
     }
