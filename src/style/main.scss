@@ -171,13 +171,14 @@
     .slide-item {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+        transition: padding 0.2s;
         &>div {
             height: 100%;
         }
     }
-    .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active {
+    .tns-slide-active.center {
         padding: 0.5rem 0;
-
+        transition: padding 0.2s;
     }
 }
 

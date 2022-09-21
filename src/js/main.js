@@ -11,7 +11,7 @@ function initFeedbackNotes() {
     var sliderContainer = document.querySelector('.feedback-notes-slider');
     if (!sliderContainer) return;
 
-    tns({
+    var slider = tns({
         container: sliderContainer,
         items: 3,
         slideBy: 1,
@@ -23,23 +23,50 @@ function initFeedbackNotes() {
         navPosition: 'bottom',
         autoHeight: true,
         mouseDrag: true,
-        gutter: 20,
+       
         responsive: {
             0: {
                 items: 1,
                 slideBy: 1,
+                edgePadding: 30,
+                nav: false,
                 center: true,
-                autoHeight: true,
+                gutter: 10,
+            },
+            576: {
+                gutter: 20,
                 edgePadding: 100,
-                navAsThumbnails: false,
             },
             1200: {
                 edgePadding: 0,
                 items: 3,
                 slideBy: 1,
-                center: true,
-                autoHeight: true,
+                nav: true,
             }
         }
+    });
+
+    slider.events.on("transitionEnd", function(info) {
+        console.log("transitionEnd", info.indexCached, info.index)
+        info.slideItems[info.indexCached].classList.remove(
+          "center"
+        );
+      
+        info.slideItems[info.index].classList.add(
+          "center"
+        );
+    });
+
+    slider.events.on("newBreakpointEnd", function(info) {
+        console.log("newBreakpointEnd", info.indexCached, info.index)
+        info.slideItems[info.indexCached].classList.remove(
+          "center"
+        );
+      
+        info.slideItems[info.index].classList.add(
+          "center"
+        );
+
+        slider.goTo(info.index);
     });
 }
