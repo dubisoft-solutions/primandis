@@ -31,11 +31,16 @@ $icon-name-awesome-quote-left: "\E003";
 $icon-name-bag: "\E004"; 
 $icon-name-calculator: "\E005"; 
 $icon-name-checkmark-circle: "\E006"; 
-$icon-name-health-check: "\E007"; 
-$icon-name-money: "\E008"; 
-$icon-name-monitor: "\E009"; 
-$icon-name-percent: "\E00A"; 
-$icon-name-safety: "\E00B"; 
+$icon-name-coin: "\E007"; 
+$icon-name-desktop: "\E008"; 
+$icon-name-health-check: "\E009"; 
+$icon-name-information: "\E00A"; 
+$icon-name-money: "\E00B"; 
+$icon-name-notes: "\E00C"; 
+$icon-name-percent: "\E00D"; 
+$icon-name-safety: "\E00E"; 
+$icon-name-shield: "\E00F"; 
+$icon-name-shopping-bag: "\E010"; 
 
 
 @function icon-char($filename) {
@@ -59,20 +64,35 @@ $icon-name-safety: "\E00B";
 	@if $filename == checkmark-circle {
 		$char: "\E006";
 	}
-	@if $filename == health-check {
+	@if $filename == coin {
 		$char: "\E007";
 	}
-	@if $filename == money {
+	@if $filename == desktop {
 		$char: "\E008";
 	}
-	@if $filename == monitor {
+	@if $filename == health-check {
 		$char: "\E009";
 	}
-	@if $filename == percent {
+	@if $filename == information {
 		$char: "\E00A";
 	}
-	@if $filename == safety {
+	@if $filename == money {
 		$char: "\E00B";
+	}
+	@if $filename == notes {
+		$char: "\E00C";
+	}
+	@if $filename == percent {
+		$char: "\E00D";
+	}
+	@if $filename == safety {
+		$char: "\E00E";
+	}
+	@if $filename == shield {
+		$char: "\E00F";
+	}
+	@if $filename == shopping-bag {
+		$char: "\E010";
 	}
 
 	@return $char;
@@ -107,18 +127,33 @@ $icon-name-safety: "\E00B";
 .icon-checkmark-circle {
 	@include icon(checkmark-circle);
 }
+.icon-coin {
+	@include icon(coin);
+}
+.icon-desktop {
+	@include icon(desktop);
+}
 .icon-health-check {
 	@include icon(health-check);
+}
+.icon-information {
+	@include icon(information);
 }
 .icon-money {
 	@include icon(money);
 }
-.icon-monitor {
-	@include icon(monitor);
+.icon-notes {
+	@include icon(notes);
 }
 .icon-percent {
 	@include icon(percent);
 }
 .icon-safety {
 	@include icon(safety);
+}
+.icon-shield {
+	@include icon(shield);
+}
+.icon-shopping-bag {
+	@include icon(shopping-bag);
 }

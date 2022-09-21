@@ -1,5 +1,6 @@
 .card {
     box-shadow: $box-shadow-sm;
+    border: 0;
     .card-body {
         .card-title {
             color: $black-89;
@@ -45,12 +46,35 @@
             background-color: $blue;
             @include media-breakpoint-down(md) {
                 padding: .625rem .688rem;
+                font-size: .75rem;
             }
         }
         .card-body {
             padding: 5.313rem 4.188rem 4.688rem 4.188rem;
             @include media-breakpoint-down(md) {
                 padding: .5rem 1.875rem 2.5rem 1.875rem;
+            }
+        }
+    }
+    &.salary-conversion {
+        .card-header {
+            padding: 1.438rem 1.563rem;
+            background-color: $blue;
+            @include media-breakpoint-down(md) {
+                padding: .625rem .688rem;
+                font-size: .75rem;
+            }
+        }
+        .card-body {
+            padding: 5.313rem 4.188rem 4.688rem 4.188rem;
+            @include media-breakpoint-down(md) {
+                padding: .5rem 0 2.5rem 0;
+            }
+            div {
+                font-size: 1.563rem;
+                @include media-breakpoint-down(md) {
+                    font-size: .75rem;
+                }
             }
         }
     }

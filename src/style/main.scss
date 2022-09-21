@@ -41,6 +41,12 @@
 }
 
 .state-funding {
+    .description {
+        font-size: 1.563rem;
+        @include media-breakpoint-down(md) {
+            font-size: .75rem;
+        }
+    }
     .state-icon {
         position: absolute;
         right: 0;
@@ -57,9 +63,55 @@
         z-index: 0;
         width: 874px;
         height: 684px;
+        @include media-breakpoint-down(md) {
+            width: 50%;
+        }
     }
     .list-items {
         padding-left: 4rem;
+        @include media-breakpoint-down(md) {
+            padding-left: 0;
+        }
+    }
+}
+
+.calculator {
+    .bg-decor {
+        position: absolute;
+        top: 250px;
+        right: 250px;
+        z-index: 0;
+        width: 450px;
+        height: 630px;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+    .btn-sm {
+        @include media-breakpoint-down(md) {
+            font-size: .75rem;
+            padding: .375rem 1.875rem;
+        }
+    }
+}
+
+.process {
+    .bg-decor {
+        position: absolute;
+        bottom: 50px;
+        right: 80px;
+        z-index: 0;
+        width: 530px;
+        height: 415px;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+    .description {
+        font-size: 1.563rem;
+        @include media-breakpoint-down(md) {
+            font-size: .75rem;
+        }
     }
 }
 

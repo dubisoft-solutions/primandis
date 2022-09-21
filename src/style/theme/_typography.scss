@@ -7,6 +7,10 @@ p {
     color: $black-45;
 }
 
+div {
+    color: $black-45;
+}
+
 @include media-breakpoint-down(md) {
     h1 {
         font-size: 3.063rem!important;
@@ -14,6 +18,9 @@ p {
     h2 {
         font-weight: bold;
         font-size: 2.25rem!important;
+    }
+    p {
+        font-size: .75rem!important;
     }
 }
 
