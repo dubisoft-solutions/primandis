@@ -1,6 +1,6 @@
 .form-control {
     border: none;
-    border-bottom: 1px solid $black-74;
+    border-bottom: .063rem solid $black-74;
     background-color: transparent;
     &:focus {
         box-shadow: none;
@@ -16,7 +16,7 @@ textarea {
         }
     }
     &.form-control {
-        border: 1px solid $black-45;
+        border: .063rem solid $black-45;
     }
 }
 
@@ -37,10 +37,14 @@ label {
 }
 
 .input-group {
+    border: .125rem solid $white;
     .form-control {
         border-bottom: none;
         color: $white;
+        padding: 0;
         &::placeholder {
+            font-weight: $fw-medium;
+            font-size: 1.875rem;
             color: $white;
         }
     }

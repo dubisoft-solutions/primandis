@@ -253,20 +253,6 @@ $scrolled-navbar-sm-height: 2.625rem;
             font-weight: bold;
             color: $white;
             background-color: transparent;
-            .label {
-                position: relative;
-                &::before {
-                    content: "";
-                    display: block;
-                    height: .125rem;
-                    width: 100%;
-                    background-color: $white;
-                    transition: 0.5s;
-                    position: absolute;
-                    bottom: -.313rem;
-                    left: 0;
-                }
-            }
         }
         &.sub-link {
             font-weight: $fw-medium;
