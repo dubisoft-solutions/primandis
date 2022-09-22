@@ -115,35 +115,34 @@
     }
 }
 
-// TODO: transform to rem
 .benefits-workers {
     .bg-decor {
         position: absolute;
         z-index: 0;
         opacity: .2;
         &.phone-right {
-            width: 100px;
-            height: 200px;
-            right: 250px;
-            bottom: 700px;
+            width: 6.25rem;
+            height: 12.5rem;
+            right: 15.625rem;
+            bottom: 43.75rem;
         }
         &.bike-right {
-            width: 400px;
-            height: 200px;
-            right: 200px;
-            bottom: 150px;
+            width: 25rem;
+            height: 12.5rem;
+            right: 12.5rem;
+            bottom: 9.375rem;
         }
         &.phone-left {
-            width: 100px;
-            height: 200px;
-            left: 250px;
-            top: 100px;
+            width: 6.25rem;
+            height: 12.5rem;
+            left: 15.625rem;
+            top: 6.25rem;
         }
         &.bike-left {
-            width: 400px;
-            height: 200px;
-            left: 200px;
-            top: 450px;
+            width: 25rem;
+            height: 12.5rem;
+            left: 12.5rem;
+            top: 28.125rem;
         }
         @include media-breakpoint-down(xxl) {
             display: none;
@@ -159,7 +158,7 @@
         right: 0;
         z-index: 0;
         @include media-breakpoint-down(md) {
-            bottom: 85px;
+            bottom: 5.313rem;
             object-fit: cover;
             height: 100%;
             width: 100%;
@@ -183,12 +182,12 @@
     position: relative;
     .bg-decor {
         position: absolute;
-        bottom: 100px;
-        right: 300px;
+        bottom: 6.25rem;
+        right: 18.75rem;
         z-index: -1;
         opacity: .1;
-        width: 450px;
-        height: 305px;
+        width: 28.125rem;
+        height: 19.063rem;
         @include media-breakpoint-down(xxl) {
             display: none;
         }
@@ -240,7 +239,7 @@
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-    margin-bottom: 108px;
+    margin-bottom: 6.75rem;
     iframe {
         left: 0;
         top: 0;
@@ -249,7 +248,7 @@
         position: absolute;
     }
     @include media-breakpoint-down(md) {
-        margin-bottom: 60px;
+        margin-bottom: 3.75rem;
     }
 }
 

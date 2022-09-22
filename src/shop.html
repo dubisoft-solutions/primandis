@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="lv">
+//= html_partials/head.html
+
+<body class="index">
+
+    <!-- Header -->
+    //= html_partials/header.html
+
+    <section class="shop bg-primary pt-26 pb-20 position-relative">
+        <div class="container">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="input-group text-lg-start text-center">
+                        <button class="input-group-text" id="search">
+                            <icon class="icon-search"></icon>
+                        </button>
+                        <input type="text" class="form-control pe-0" placeholder="Suche…" aria-label="Search" aria-describedby="search">
+                    </div>
+                    <button class="nav-link active pb-4" id="v-pills-filter-tab" data-bs-toggle="pill" data-bs-target="#v-pills-filter" type="button" role="tab" aria-controls="v-pills-filter" aria-selected="true">Filter</button>
+                    <button class="nav-link sub-link" id="v-pills-manufacturer-tab" data-bs-toggle="pill" data-bs-target="#v-pills-manufacturer" type="button" role="tab" aria-controls="v-pills-manufacturer" aria-selected="true">Hersteller</button>
+                    <button class="nav-link sub-link" id="v-pills-category-tab" data-bs-toggle="pill" data-bs-target="#v-pills-category" type="button" role="tab" aria-controls="v-pills-category" aria-selected="true">Kategorie</button>
+                    <button class="nav-link sub-link" id="v-pills-price-tab" data-bs-toggle="pill" data-bs-target="#v-pills-price" type="button" role="tab" aria-controls="v-pills-price" aria-selected="true">Preis</button>
+                    <button class="nav-link sub-link" id="v-pills-article-tab" data-bs-toggle="pill" data-bs-target="#v-pills-article" type="button" role="tab" aria-controls="v-pills-article" aria-selected="true">Artikel auf Lager</button>
+                    <button class="nav-link sub-link" id="v-pills-latest-articles-tab" data-bs-toggle="pill" data-bs-target="#v-pills-latest-articles" type="button" role="tab" aria-controls="v-pills-latest-articles" aria-selected="true">Neuste Artikel</button>
+                    <button class="nav-link pt-4" id="v-pills-reset-filter-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reset-filter" type="button" role="tab" aria-controls="v-pills-reset-filter" aria-selected="false">Filter zurücksetzen</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="row justify-content-end mb-5">
+                            <div class="col-lg-3">
+                                <div class="shadow-sm bg-white text-center py-4">
+                                    <img src="img/logo.svg" alt="Logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-21">
+                            <div class="col-lg-12 text-center">
+                                <h2 class="text-dark fw-medium mb-4 pb-2">Herzlich Willkommen!</h2>
+                                <p class="fs-3 fw-light mb-19">Im Shop von primandis</p>
+
+                                <div class="d-flex">
+                                    <a href="#" class="btn btn-primary btn-md px-4">Steuerliche Daten anpassen</a>
+                                    <p class="text-start ps-4">* Bitte geben Sie ein paar Daten an, damit wir Ihnen Ihre persönlichen Preise anzeigen können. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products pt-20 pb-12">
+        <div class="container">
+            <div class="row pb-4">
+                <div class="col-lg-3">
+                    <img src="img/ipad.svg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A">
+                </div>
+                <div class="col-lg-9">
+                    <p class="fs-3 fw-light mb-0">Apple iPad Air 10.0 WiFi MYFW2FD/A</p>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="fs-3 fw-light mb-0">256 GB, iOS, silber</p>
+                        <div class="d-flex align-items-center">
+                            <p class="text-danger text-decoration-line-through mb-0">728,99 €</p>
+                            <p class="text-success fw-medium fs-3 mb-0 ps-4">434,70 €</p>
+                        </div>
+                    </div>
+                    <ul class="list-items with-circle mb-4">
+                        <li>hat schnelle, einfache und sichere Touch ID</li>
+                        <li>arbeitet mit den fortschrittlichsten A14 Bionic Chip</li>
+                        <li>mit Unterstützung für den Apple Pencis (2. Geneation) und das</li>
+                        <li>Magic Keyboard</li>
+                        <li>erhältlich in Silber, Space Grau, Roségold, Grün und Sky Blau</li>
+                    </ul>
+                    <a href="#" class="btn-link text-success fw-normal">auf Lager</a>
+                </div>
+            </div>
+            <div class="border-bottom mb-4"></div>
+            <div class="row pb-4">
+                <div class="col-lg-3">
+                    <img src="img/whatch.svg" alt="Apple Watch Series 7 Aluminium">
+                </div>
+                <div class="col-lg-9">
+                    <p class="fs-3 fw-light mb-0">Apple Watch Series 7 Aluminium</p>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="fs-3 fw-light mb-0">45mm mitternacht</p>
+                        <div class="d-flex align-items-center">
+                            <p class="text-danger text-decoration-line-through mb-0">419,00 €</p>
+                            <p class="text-success fw-medium fs-3 mb-0 ps-4">246,47 €</p>
+                        </div>
+                    </div>
+                    <ul class="list-items with-circle mb-4">
+                        <li>Smartwatch für iOS</li>
+                        <li>Wasserdicht bis 50m</li>
+                        <li>Touchscreen</li>
+                        <li>Aluminiumgehäuse (38mm) und Ion-X Glas</li>
+                        <li>Kunststoffarmband</li>
+                    </ul>
+                    <a href="#" class="btn-link text-warning fw-normal">Bestellartikel</a>
+                </div>
+            </div>
+            <div class="border-bottom mb-4"></div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="img/iphone.svg" alt="Apple iPhone 13 Pro MLVK3ZD/A">
+                </div>
+                <div class="col-lg-9">
+                    <p class="fs-3 fw-light mb-0">Apple iPhone 13 Pro MLVK3ZD/A</p>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="fs-3 fw-light mb-0">256 GB, iOS, grün</p>
+                        <div class="d-flex align-items-center">
+                            <p class="text-danger text-decoration-line-through mb-0">1.268,99 €</p>
+                            <p class="text-success fw-medium fs-3 mb-0 ps-4">746,47 €</p>
+                        </div>
+                    </div>
+                    <ul class="list-items with-circle mb-4">
+                        <li>Smartphone</li>
+                        <li>Apple iOS 15</li>
+                        <li>Display: 15,5 cm (6.1’’)</li>
+                        <li>256 GB Speicher</li>
+                        <li>Dual-Sim</li>
+                    </ul>
+                    <a href="#" class="btn-link text-success fw-normal">2-3 Werktage</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    //= html_partials/footer.html
+</body>
+
+//= html_partials/scripts.html
+
+</html>

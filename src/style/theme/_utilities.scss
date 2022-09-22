@@ -18,6 +18,14 @@
     line-height: $line-height-xl;
 }
 
+.shadow-sm {
+    box-shadow: $box-shadow-xs!important;
+}
+
+.fw-medium {
+    font-weight: $fw-medium;
+}
+
 @include media-breakpoint-down(xl) {
     .w-100-mobile {
         width: 100%;

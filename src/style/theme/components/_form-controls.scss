@@ -35,3 +35,13 @@ label {
         font-size: .625rem;
     }
 }
+
+.input-group {
+    .form-control {
+        border-bottom: none;
+        color: $white;
+        &::placeholder {
+            color: $white;
+        }
+    }
+}

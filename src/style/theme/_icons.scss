@@ -31,16 +31,18 @@ $icon-name-awesome-quote-left: "\E003";
 $icon-name-bag: "\E004"; 
 $icon-name-calculator: "\E005"; 
 $icon-name-checkmark-circle: "\E006"; 
-$icon-name-coin: "\E007"; 
-$icon-name-desktop: "\E008"; 
-$icon-name-health-check: "\E009"; 
-$icon-name-information: "\E00A"; 
-$icon-name-money: "\E00B"; 
-$icon-name-notes: "\E00C"; 
-$icon-name-percent: "\E00D"; 
-$icon-name-safety: "\E00E"; 
-$icon-name-shield: "\E00F"; 
-$icon-name-shopping-bag: "\E010"; 
+$icon-name-circle: "\E007"; 
+$icon-name-coin: "\E008"; 
+$icon-name-desktop: "\E009"; 
+$icon-name-health-check: "\E00A"; 
+$icon-name-information: "\E00B"; 
+$icon-name-money: "\E00C"; 
+$icon-name-notes: "\E00D"; 
+$icon-name-percent: "\E00E"; 
+$icon-name-safety: "\E00F"; 
+$icon-name-search: "\E010"; 
+$icon-name-shield: "\E011"; 
+$icon-name-shopping-bag: "\E012"; 
 
 
 @function icon-char($filename) {
@@ -64,35 +66,41 @@ $icon-name-shopping-bag: "\E010";
 	@if $filename == checkmark-circle {
 		$char: "\E006";
 	}
-	@if $filename == coin {
+	@if $filename == circle {
 		$char: "\E007";
 	}
-	@if $filename == desktop {
+	@if $filename == coin {
 		$char: "\E008";
 	}
-	@if $filename == health-check {
+	@if $filename == desktop {
 		$char: "\E009";
 	}
-	@if $filename == information {
+	@if $filename == health-check {
 		$char: "\E00A";
 	}
-	@if $filename == money {
+	@if $filename == information {
 		$char: "\E00B";
 	}
-	@if $filename == notes {
+	@if $filename == money {
 		$char: "\E00C";
 	}
-	@if $filename == percent {
+	@if $filename == notes {
 		$char: "\E00D";
 	}
-	@if $filename == safety {
+	@if $filename == percent {
 		$char: "\E00E";
 	}
-	@if $filename == shield {
+	@if $filename == safety {
 		$char: "\E00F";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == search {
 		$char: "\E010";
+	}
+	@if $filename == shield {
+		$char: "\E011";
+	}
+	@if $filename == shopping-bag {
+		$char: "\E012";
 	}
 
 	@return $char;
@@ -127,6 +135,9 @@ $icon-name-shopping-bag: "\E010";
 .icon-checkmark-circle {
 	@include icon(checkmark-circle);
 }
+.icon-circle {
+	@include icon(circle);
+}
 .icon-coin {
 	@include icon(coin);
 }
@@ -150,6 +161,9 @@ $icon-name-shopping-bag: "\E010";
 }
 .icon-safety {
 	@include icon(safety);
+}
+.icon-search {
+	@include icon(search);
 }
 .icon-shield {
 	@include icon(shield);
