@@ -144,7 +144,7 @@ $scrolled-navbar-sm-height: 2.625rem;
             &.collapse.show {
                 opacity: 1;
                 pointer-events: auto;
-                min-height: calc(100vh - 60px);
+                min-height: calc(100vh - 8.625rem);
             }
             .navbar-nav {
                 margin-right: initial !important;
@@ -265,8 +265,12 @@ $scrolled-navbar-sm-height: 2.625rem;
     margin-top: 0;
 }
 
-.menu-opened {
-    .get-it-now-banner {
-        display: none !important;
+@include media-breakpoint-down(xl) {
+    .nav-menu-opened {
+        overflow: hidden; // block background scroll
+
+        .hide-when-mobile-menu-opened {
+            visibility: hidden;
+        }
     }
 }
