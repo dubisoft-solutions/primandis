@@ -26,8 +26,27 @@
     box-shadow: $box-shadow-xs!important;
 }
 
+.shadow-md {
+    box-shadow: $box-shadow-xl!important;
+}
+
 .fw-medium {
     font-weight: $fw-medium;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #B6B6B6!important;
+}
+
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1488px;
+    }
 }
 
 @include media-breakpoint-down(xl) {
@@ -58,6 +77,9 @@
     .fs-11 {
         font-size: .563rem!important;
     }
+    .fs-14 {
+        font-size: .75rem!important;
+    }
     .ps-13 {
         padding-left: 0!important;
     }
@@ -80,6 +102,9 @@
     .pt-30 {
         padding-top: 10rem!important;
     }
+    .pt-31 {
+        padding-top: 7.5rem!important;
+    }
     .pb-6 {
         padding-bottom: 2.5rem!important;
     }
@@ -94,6 +119,9 @@
     }
     .pb-20 {
         padding-bottom: 3.5rem!important;
+    }
+    .pb-21 {
+        padding-bottom: 0!important;
     }
     .pb-25 {
         padding-bottom: 2.5rem!important;
@@ -136,6 +164,9 @@
     }
     .mb-21 {
         margin-bottom: 1.5rem!important;
+    }
+    .mb-26 {
+        margin-bottom: 0!important;
     }
     .mb-32 {
         margin-bottom: 2.5rem!important;

@@ -36,6 +36,15 @@ label {
     }
 }
 
+.products {
+    .form-check-label {
+        font-size: 1.563rem;
+        @include media-breakpoint-down(md) {
+            font-size: .75rem;
+        }
+    }
+}
+
 .input-group {
     border: .125rem solid $white;
     .form-control {

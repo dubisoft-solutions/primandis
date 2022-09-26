@@ -115,6 +115,18 @@
     }
 }
 
+.products {
+    .btn-primary {
+        &.btn-md {
+            @include media-breakpoint-down(md) {
+                font-size: .75rem;
+                line-height: .938rem;
+                padding: .5rem .625rem;
+            }
+        }
+    }
+}
+
 .benefits-workers {
     .bg-decor {
         position: absolute;

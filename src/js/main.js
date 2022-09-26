@@ -4,6 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     initFeedbackNotes();
+    initProductsPictures();
 });
 
 
@@ -23,7 +24,7 @@ function initFeedbackNotes() {
         navPosition: 'bottom',
         autoHeight: true,
         mouseDrag: true,
-       
+
         responsive: {
             0: {
                 items: 1,
@@ -49,24 +50,43 @@ function initFeedbackNotes() {
     slider.events.on("transitionEnd", function(info) {
         console.log("transitionEnd", info.indexCached, info.index)
         info.slideItems[info.indexCached].classList.remove(
-          "center"
+            "center"
         );
-      
+
         info.slideItems[info.index].classList.add(
-          "center"
+            "center"
         );
     });
 
     slider.events.on("newBreakpointEnd", function(info) {
         console.log("newBreakpointEnd", info.indexCached, info.index)
         info.slideItems[info.indexCached].classList.remove(
-          "center"
+            "center"
         );
-      
+
         info.slideItems[info.index].classList.add(
-          "center"
+            "center"
         );
 
         slider.goTo(info.index);
+    });
+}
+
+function initProductsPictures() {
+    var sliderContainer = document.querySelector('.products-pictures-slider');
+    if (!sliderContainer) return;
+
+    var slider = tns({
+        container: sliderContainer,
+        items: 3,
+        slideBy: 1,
+        autoplay: false,
+        navAsThumbnails: false,
+        controls: false,
+        autoplayButtonOutput: false,
+        autoHeight: true,
+        mouseDrag: true,
+        edgePadding: 30,
+        gutter: 20,
     });
 }

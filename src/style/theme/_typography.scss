@@ -5,10 +5,7 @@ a {
 p {
     font-size: 1.563rem;
     color: $black-45;
-}
-
-div {
-    color: $black-45;
+    margin-bottom: 0;
 }
 
 @include media-breakpoint-down(md) {

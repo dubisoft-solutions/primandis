@@ -25,82 +25,94 @@ $font-icons-family-name: "IconsFont";
 	@include icon-styles;
 }
 
-$icon-name-arrow-down: "\E001"; 
-$icon-name-arrow-up: "\E002"; 
-$icon-name-awesome-quote-left: "\E003"; 
-$icon-name-bag: "\E004"; 
-$icon-name-calculator: "\E005"; 
-$icon-name-checkmark-circle: "\E006"; 
-$icon-name-circle: "\E007"; 
-$icon-name-coin: "\E008"; 
-$icon-name-desktop: "\E009"; 
-$icon-name-health-check: "\E00A"; 
-$icon-name-information: "\E00B"; 
-$icon-name-money: "\E00C"; 
-$icon-name-notes: "\E00D"; 
-$icon-name-percent: "\E00E"; 
-$icon-name-safety: "\E00F"; 
-$icon-name-search: "\E010"; 
-$icon-name-shield: "\E011"; 
-$icon-name-shopping-bag: "\E012"; 
+$icon-name-accordion-arrow-down: "\E001"; 
+$icon-name-arrow-down: "\E002"; 
+$icon-name-arrow-up: "\E003"; 
+$icon-name-awesome-quote-left: "\E004"; 
+$icon-name-bag: "\E005"; 
+$icon-name-calculator: "\E006"; 
+$icon-name-checkmark-circle: "\E007"; 
+$icon-name-circle: "\E008"; 
+$icon-name-coin: "\E009"; 
+$icon-name-desktop: "\E00A"; 
+$icon-name-health-check: "\E00B"; 
+$icon-name-info: "\E00C"; 
+$icon-name-information-mark: "\E00D"; 
+$icon-name-information: "\E00E"; 
+$icon-name-money: "\E00F"; 
+$icon-name-notes: "\E010"; 
+$icon-name-percent: "\E011"; 
+$icon-name-safety: "\E012"; 
+$icon-name-search: "\E013"; 
+$icon-name-shield: "\E014"; 
+$icon-name-shopping-bag: "\E015"; 
 
 
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == arrow-down {
+	@if $filename == accordion-arrow-down {
 		$char: "\E001";
 	}
-	@if $filename == arrow-up {
+	@if $filename == arrow-down {
 		$char: "\E002";
 	}
-	@if $filename == awesome-quote-left {
+	@if $filename == arrow-up {
 		$char: "\E003";
 	}
-	@if $filename == bag {
+	@if $filename == awesome-quote-left {
 		$char: "\E004";
 	}
-	@if $filename == calculator {
+	@if $filename == bag {
 		$char: "\E005";
 	}
-	@if $filename == checkmark-circle {
+	@if $filename == calculator {
 		$char: "\E006";
 	}
-	@if $filename == circle {
+	@if $filename == checkmark-circle {
 		$char: "\E007";
 	}
-	@if $filename == coin {
+	@if $filename == circle {
 		$char: "\E008";
 	}
-	@if $filename == desktop {
+	@if $filename == coin {
 		$char: "\E009";
 	}
-	@if $filename == health-check {
+	@if $filename == desktop {
 		$char: "\E00A";
 	}
-	@if $filename == information {
+	@if $filename == health-check {
 		$char: "\E00B";
 	}
-	@if $filename == money {
+	@if $filename == info {
 		$char: "\E00C";
 	}
-	@if $filename == notes {
+	@if $filename == information-mark {
 		$char: "\E00D";
 	}
-	@if $filename == percent {
+	@if $filename == information {
 		$char: "\E00E";
 	}
-	@if $filename == safety {
+	@if $filename == money {
 		$char: "\E00F";
 	}
-	@if $filename == search {
+	@if $filename == notes {
 		$char: "\E010";
 	}
-	@if $filename == shield {
+	@if $filename == percent {
 		$char: "\E011";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == safety {
 		$char: "\E012";
+	}
+	@if $filename == search {
+		$char: "\E013";
+	}
+	@if $filename == shield {
+		$char: "\E014";
+	}
+	@if $filename == shopping-bag {
+		$char: "\E015";
 	}
 
 	@return $char;
@@ -117,6 +129,9 @@ $icon-name-shopping-bag: "\E012";
 	}
 }
 
+.icon-accordion-arrow-down {
+	@include icon(accordion-arrow-down);
+}
 .icon-arrow-down {
 	@include icon(arrow-down);
 }
@@ -146,6 +161,12 @@ $icon-name-shopping-bag: "\E012";
 }
 .icon-health-check {
 	@include icon(health-check);
+}
+.icon-info {
+	@include icon(info);
+}
+.icon-information-mark {
+	@include icon(information-mark);
 }
 .icon-information {
 	@include icon(information);
