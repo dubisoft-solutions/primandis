@@ -4,6 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     initFeedbackNotes();
+    addClassToBodyWhenMobileMenuOpens();
 });
 
 
@@ -69,4 +70,17 @@ function initFeedbackNotes() {
 
         slider.goTo(info.index);
     });
+}
+
+function addClassToBodyWhenMobileMenuOpens() {
+    var mainNavbarCollapse = document.getElementById('mainNavbarCollapse');
+    var body = document.querySelector('body');
+
+    mainNavbarCollapse.addEventListener('show.bs.collapse', function(event) {
+        body.classList.add('nav-menu-opened');
+    })
+
+    mainNavbarCollapse.addEventListener('hidden.bs.collapse', function(event) {
+        body.classList.remove('nav-menu-opened');
+    })
 }
