@@ -2,8 +2,12 @@
     border: none;
     border-bottom: .063rem solid $black-74;
     background-color: transparent;
+    padding: 0;
     &:focus {
         box-shadow: none;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 1rem;
     }
 }
 
