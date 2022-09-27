@@ -172,13 +172,13 @@
                         </div>
                         <div class="card-body">
                             <form>
-                                <div class="row pb-lg-5 pb-0">
+                                <div class="row pb-lg-5 pb-1">
                                     <div class="col-lg-6">
                                         <input type="number" class="form-control" aria-label="Price">
                                         <label for="">Preis des Wunschgerätes in EUR (Brutto)</label>
                                     </div>
                                 </div>
-                                <div class="row pb-lg-5 pb-0">
+                                <div class="row pb-lg-5 pb-1">
                                     <div class="col-lg-4">
                                         <input type="text" class="form-control" aria-label="Salary">
                                         <label for="">Mtl. Bruttogehalt</label>
@@ -241,7 +241,7 @@
                 </div>
             </div>
     
-            <div class="row">
+            <div class="row pb-20">
                 <div class="col-lg-12">
                     <div class="card salary-conversion shadow-none border-0">
                         <div class="card-header text-white fw-bold">
@@ -461,6 +461,379 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+    
+            <div class="row pb-20">
+                <div class="col-lg-12">
+                    <div class="card workers bg-transparent">
+                        <div class="card-header text-white fw-bold">
+                            Arbeitgeber
+                        </div>
+                        <div class="card-body">
+                            <p>Geben Sie die Postleitzahl und die Straße ihres Arbeitgebers an, und wählen Sie danach den zutreffenden Arbeitgeber aus der Liste aus.</p>
+                            <form>
+                                <div class="row pb-lg-5 pb-0">
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" aria-label="Postcode">
+                                        <label>PLZ*</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" aria-label="Street">
+                                        <label>Straße, Nr.*</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-4">
+                                        <input type="number" class="form-control" aria-label="Employer">
+                                        <label>Arbeitgeber*</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center pb-4">
+                                    <a href="#" class="btn-link mb-lg-0 mb-4">Arbeitgeber nicht in der Liste erhalten</a>
+                                    <a href="#" class="btn-link">Weiter</a>
+                                </div>
+                                <p class="text-gray">* Pflichtfeld</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row pb-20">
+                <div class="col-lg-12">
+                    <div class="card workers bg-transparent">
+                        <div class="card-header text-white fw-bold">
+                            Arbeitnehmer
+                        </div>
+                        <div class="card-body">
+                            <p>Geben Sie Ihre persönlichen Daten hier ein.</p>
+                            <form>
+                                <div class="row pb-lg-5 pb-0">
+                                    <div class="col-lg-6 pb-lg-0 pb-2">
+                                        <input type="text" class="form-control" aria-label="Name">
+                                        <label>Name*</label>
+                                    </div>
+                                    <div class="col-lg-6 pb-lg-0 pb-2">
+                                        <input type="text" class="form-control" aria-label="Surname">
+                                        <label>Nachname*</label>
+                                    </div>
+                                </div>
+                                <div class="row pb-lg-5 pb-0">
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" aria-label="Street">
+                                        <label>Straße, Nr*</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" aria-label="Postcode">
+                                        <label>PLZ*</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="text" class="form-control" aria-label="Location">
+                                        <label>Ort*</label>
+                                    </div>
+                                </div>
+                                <div class="row pb-lg-5 pb-0">
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="email" class="form-control" aria-label="Email">
+                                        <label>Email-Adresse*</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="tel" class="form-control" aria-label="Phone">
+                                        <label>Telefonnummer*</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-4">
+                                        <input type="number" class="form-control" aria-label="Personal number">
+                                        <label>Personalnummer</label>
+                                    </div>
+                                </div>
+                                <p class="text-gray">* Pflichtfeld</p>
+                                <div class="text-lg-end text-center">
+                                    <a href="#" class="btn-link">Weiter</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row pb-20">
+                <div class="col-lg-12">
+                    <div class="card workers bg-transparent">
+                        <div class="card-header text-white fw-bold">
+                            Händler
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-lg-0 mb-2">Geben Sie die Postleitzahl und die Straße des Händlers an, und wählen Sie danach den zutreffenden Händler aus der Liste aus.</p>
+                            <form>
+                                <div class="row pb-lg-5 pb-0">
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" aria-label="Postcode">
+                                        <label>PLZ*</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" aria-label="Street">
+                                        <label>Straße, Nr.*</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-4">
+                                        <input type="number" class="form-control" aria-label="Retailer">
+                                        <label>Fachhändler*</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between pb-4">
+                                    <a href="#" class="btn-link">Fachhändler nicht in der Liste erhalten</a>
+                                    <a href="#" class="btn-link">Weiter</a>
+                                </div>
+                                <p class="text-gray">* Pflichtfeld</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row pb-20">
+                <div class="col-lg-12">
+                    <div class="card workers bg-transparent">
+                        <div class="card-header text-white fw-bold">
+                            Fahrrad
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-lg-5 mb-3">Geben Sie hier die Fahrraddaten ein.</p>
+                            <form>
+                                <div class="row pb-lg-5 pb-0">
+                                    <div class="col-lg-6 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" placeholder="Marke" aria-label="Marke">
+                                    </div>
+                                    <div class="col-lg-6 pb-lg-0 pb-2">
+                                        <input type="text" class="form-control" aria-label="Brand">
+                                        <label>Marke (falls nicht in der Liste vorhanden)</label>
+                                    </div>
+                                    <div class="col-lg-6 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" placeholder="Modell" aria-label="Purchase price">
+                                    </div>
+                                    <div class="col-lg-6 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" aria-label="Model">
+                                        <label>Modell (falls nicht in der Liste vorhanden)</label>
+                                    </div>
+                                </div>
+                                <div class="row pb-lg-5 pb-0">
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" aria-label="Frame number">
+                                        <label>Rahmennummer</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="text" class="form-control" aria-label="Bike type">
+                                        <label>Fahrradtyp*</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-2">
+                                        <input type="number" class="form-control" aria-label="Purchase price">
+                                        <label>Kaufpreis (brutto)*</label>
+                                    </div>
+                                </div>
+                                <div class="row pb-lg-5 pb-0">
+                                    <div class="col-lg-4">
+                                        <input type="number" class="form-control" aria-label="RRP gross">
+                                        <label>UVP (brutto)*</label>
+                                    </div>
+                                    <div class="col-lg-4 pb-lg-0 pb-3">
+                                        <a href="#" class="btn-link">Zubehör hinzufügen</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between pb-lg-4 pb-0">
+                                    <p class="text-gray">* Pflichtfeld</p>
+                                    <a href="#" class="btn-link">Weiter</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row pb-20">
+                <div class="col-lg-12">
+                    <div class="card salary-conversion shadow-none border-0">
+                        <div class="card-header text-white fw-bold">
+                            Bitte überprüfen Sie alle Eingaben auf Richtigkeit
+                        </div>
+                        <div class="card-body pt-lg-5 pt-4 pb-0">
+                            <div class="mb-lg-4 mb-2">1. Daten des Arbeitgebers:</div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Praxis / Firma</div>
+                                <div>Beispielfirma</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Straße, Nr.</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">PLZ, Ort</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Telefonnummer</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Email-Adresse</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="border-bottom mb-lg-4 mb-1"></div>
+    
+                            <div class="mb-lg-4 mb-2">1.1 Ansprechpartner:</div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Vorname</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Name</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Telefonnummer</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="border-bottom mb-lg-4 mb-1"></div>
+    
+                            <div class="mb-lg-4 mb-2">2. Daten des Arbeitnehmers:</div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Vorname</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Nachname</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Straße, Nr.</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">PLZ, Ort</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Telefonnummer</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Email-Adresse</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="border-bottom mb-lg-4 mb-1"></div>
+                            <div class="mb-4">3. Daten des Fachhändlers:</div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Fachhändler</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Straße, Nr.</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">PLZ, Ort</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Telefonnummer</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Email-Adresse</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="border-bottom mb-lg-4 mb-1"></div>
+    
+                            <div class="mb-lg-4 mb-2">4. Daten des Fahrrads:</div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Marke</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Modell</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Rahmennummer</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Fahrradtyp</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">UVP (brutto)</div>
+                                <div>XY</div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-lg-4 pb-1">
+                                <div class="fw-bold">Kaufpreis (brutto)</div>
+                                <div>XY</div>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-lg-12 text-lg-end text-center">
+                                    <a href="#" class="btn-link">Zurück</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row pb-20">
+                <div class="col-lg-12">
+                    <div class="card workers bg-transparent">
+                        <div class="card-header text-white fw-bold">
+                            Dokumente
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-lg-5 mb-4">Hier haben Sie die Möglichkeit, ein bereits vorliegendes Angebot oder eine Auftragsbestätigung Ihres Fahrradhändlers hochzuladen (optional).</p>
+                            <form>
+                                <div class="row pb-lg-5 pb-0">
+                                    <div class="col-lg-10">
+                                        <input type="number" class="form-control" placeholder="Datei mit Angebot des Händlers hochladen" aria-label="Upload file">
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <a href="#" class="btn-link">Durchsuchen</a>
+                                    </div>
+                                </div>
+                                <p class="text-gray">Erlaubte Dateiformate: pdf, jpg, jpeg, png, tiff</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row pb-20">
+                <div class="col-lg-12">
+                    <div class="card workers bg-transparent">
+                        <div class="card-header text-white fw-bold">
+                            Datenschutz
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-lg-4 mb-0 pb-1">Datenschutzerklärung</p>
+                            <div class="mb-lg-5 mb-3">
+                                <a href="#" class="btn-link">Datenschutzerklärung als PDF</a>
+                            </div>
+                            <form>
+                                <div class="row pb-lg-4 pb-0">
+                                    <div class="col-lg-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioPolicy" id="flexRadioPolicy">
+                                            <label class="form-check-label pt-0" for="flexRadioPolicy">
+                                                Ich habe die Datenschutzerklärung zur Kenntnis genommen und bin mit der Verarbeitung meiner 
+    Daten im Rahmen der Vertragsabwicklung einverstanden.*
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray">* Pflichtfeld</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-lg-12 text-lg-end text-center">
+                    <a href="#" class="btn btn-primary btn-md d-lg-inline d-block">Jetzt abschicken</a>
                 </div>
             </div>
         </div>
