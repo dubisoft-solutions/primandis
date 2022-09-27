@@ -122,7 +122,13 @@
                 font-size: .75rem;
                 line-height: .938rem;
                 padding: .5rem .625rem;
+                min-width: 8.75rem;
             }
+        }
+    }
+    .form-control {
+        @include media-breakpoint-down(md) {
+            width: 25%;
         }
     }
 }
