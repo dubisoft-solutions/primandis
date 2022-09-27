@@ -14,10 +14,10 @@
         <nav class="top-navbar navbar navbar-expand-xl navbar-light fixed-top d-flex flex-column">
             <div class="container nav-wrapper">
                 <a class="navbar-brand hide-when-mobile-menu-opened pt-0 align-self-center me-0" href="index.html">
-                    <img src="img/logo.svg" alt="logo" class="navbar-brand-img d-lg-block d-none">
-                    <img src="img/logo-mobile.svg" alt="logo" class="navbar-brand-img d-lg-none d-block">
+                    <img src="img/logo.svg" alt="logo" class="navbar-brand-img d-xl-block d-none">
+                    <img src="img/logo-mobile.svg" alt="logo" class="navbar-brand-img d-xl-none d-block">
                 </a>
-                <a href="#" class="btn hide-when-mobile-menu-opened btn-primary btn-xs d-lg-none d-block">Ersparnisrechner</a>
+                <a href="#" class="btn hide-when-mobile-menu-opened btn-primary btn-xs d-xl-none d-block">Ersparnisrechner</a>
                 <button class="navbar-toggler border-0 collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-collapsed font-size-30">
                         <img src="img/menu.svg" alt="Menu">
@@ -29,7 +29,7 @@
                 <div class="navbar-collapse disable-animation collapse nav-menu-wrapper" id="mainNavbarCollapse">
                     <!-- Navigation -->
                     <ul class="navbar-nav navigation-menu">
-                        <li class="d-lg-none d-block">
+                        <li class="d-xl-none d-block">
                             <a class="navbar-brand pt-0 align-self-center me-0" href="index.html">
                                 <img src="img/logo-mobile.svg" alt="logo" class="navbar-brand-img">
                             </a>
@@ -84,52 +84,148 @@
         </nav>
     </header>
 
-    <section class="products pt-20 pb-12">
+    <section class="products pt-31 pb-12">
         <div class="container">
-            <div class="row pb-4">
-                <div class="col-lg-3">
-                    <img src="img/ipad.svg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A">
+            <div class="row mb-4 d-lg-none d-block">
+                <div class="col-12">
+                    <p class="fs-3 text-secondary fw-medium">Apple iPad Air 10.0 WiFi MYFW2FD/A <span class="d-block">256 GB, iOS, silber</span></p>
                 </div>
-                <div class="col-lg-9">
-                    <p class="fs-3 fw-light mb-4 pb-2">Apple iPad Air 10.0 WiFi MYFW2FD/A 256 GB, iOS, silber</p>
+            </div>
+            <div class="row pb-4">
+                <div class="col-lg-3 col-4">
+                    <img src="img/ipad.png" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100 mb-5">
+                    <div class="products-pictures-slider">
+                        <div class="slide-item">
+                            <img src="img/ipad.png" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                        </div>
+                        <div class="slide-item">
+                            <img src="img/ipad.png" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-8">
+                    <p class="fs-3 text-secondary fw-medium mb-4 pb-2 d-lg-block d-none">Apple iPad Air 10.0 WiFi MYFW2FD/A <span class="d-block">256 GB, iOS, silber</span></p>
 
-                    <div class="row">
-                        <div class="col-lg-6">
+                    <div class="row pb-lg-4 pb-3">
+                        <div class="col-lg-8">
+                            <div class="row pb-lg-4 pb-0">
+                                <div class="col-lg-8 col-8">
+                                    <p>Normaler Preis:</p>
+                                </div>
+                                <div class="col-lg-4 col-4">
+                                    <p class="text-danger">728,99 €</p>
+                                </div>
+                            </div>
+                            <div class="row pb-lg-4 pb-2">
+                                <div class="col-lg-8 col-8">
+                                    <p>40,4% Ersparnis:</p>
+                                </div>
+                                <div class="col-lg-4 col-4">
+                                    <p>294,29 €</p>
+                                </div>
+                            </div>
+                            <div class="row pb-lg-3 pb-3">
+                                <div class="col-lg-8 col-8">
+                                    <p class="fs-14 fw-bold">
+                                        Ihr primandis-Preis:
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-4">
+                                    <p class="fs-14 fw-bold text-success">
+                                        434,70 €
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="bg-muted shadow-md px-lg-3 px-2 py-lg-4 py-2">
+                                <div class="d-flex align-items-baseline">
+                                    <icon class="icon icon-information-mark fs-10 pe-3"></icon>
+                                    <div class="fw-medium fs-11">Ihr Arbeitgeber übernimmt die Versicherung im Wert von 11,99 € / Monat für diesen Artikel
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom mb-lg-4 mb-3"></div>
+                    <div class="row pt-lg-2 pt-0">
+                        <div class="col-lg-6 col-12">
                             <p>18,11 € / Monat</p>
                         </div>
-                        <div class="col-lg-6 d-flex">
+                        <div class="col-lg-3 col-6">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadio32Months" id="flexRadio32Months">
-                                <label class="form-check-label" for="flexRadio32Months">
+                                <label class="form-check-label pt-0" for="flexRadio32Months">
                                     32 Monate
                                 </label>
                             </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadio24Months" id="flexRadio24Months">
-                                <label class="form-check-label" for="flexRadio24Months">
+                                <label class="form-check-label pt-0" for="flexRadio24Months">
                                     24 Monate
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <p class="mb-26">* Die Berechnung stützt sich auf ihre steuerlichen Einstellungen. Für eine Neuberechnung, passen Sie hier Ihre Einstellungen an.</p>
+                    <p class="mb-26">* Die Berechnung stützt sich auf ihre steuerlichen Einstellungen. Für eine Neuberechnung, passen Sie <a href="#" class="fw-bold">hier</a> Ihre Einstellungen an.</p>
 
                     <div class="row">
                         <div class="col-lg-12 mb-4">
-                            Verfügbarkeit:
-                            <span class="text-success ps-5">auf Lager</span>
+                            <p>Verfügbarkeit: <span class="text-success ps-4">auf Lager</span></p>
                         </div>
-                        <div class="col-lg-4 d-flex">
-                            Anzahl:
-                            <input type="number" class="form-control" aria-label="Anzahl">
+                        <div class="col-lg-4 d-lg-flex d-none">
+                            <p>Anzahl:</p>
+                            <input type="number" class="form-control ms-lg-4 ms-0" aria-label="Anzahl">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="d-flex justify-content-between align-items-end">
-                <p class="text-primary">Zurück zur Übersicht</p>
-                <a href="#" class="btn btn-primary">In den Warenkorb</a>
+            <div class="d-flex justify-content-between align-items-end pb-21">
+                <p class="fw-bold text-primary mb-0 d-lg-block d-none">Zurück zur Übersicht</p>
+                <div class="d-lg-none d-flex">
+                    <p>Anzahl:</p>
+                    <input type="number" class="form-control ms-lg-4 ms-0" aria-label="Anzahl">
+                </div>
+                <a href="#" class="btn btn-primary btn-md">In den Warenkorb</a>
+            </div>
+
+            <p class="fw-bold text-primary mb-0 d-lg-none d-block">Zurück zur Übersicht</p>
+
+            <div class="accordion accordion-flush" id="accordionFlushOverview">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingDescription">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDescription" aria-expanded="false" aria-controls="flush-collapseDescription">
+                        Beschreibung
+                    </button>
+                    </h2>
+                    <div id="flush-collapseDescription" class="accordion-collapse collapse" aria-labelledby="flush-headingDescription" data-bs-parent="#accordionFlushOverview">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTechnicalSpecifications">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTechnicalSpecifications" aria-expanded="false" aria-controls="flush-collapseTechnicalSpecifications">
+                        Technische Daten
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTechnicalSpecifications" class="accordion-collapse collapse" aria-labelledby="flush-headingTechnicalSpecifications" data-bs-parent="#accordionFlushOverview">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingCharacteristics">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCharacteristics" aria-expanded="false" aria-controls="flush-collapseCharacteristics">
+                        Eigenschaften
+                    </button>
+                    </h2>
+                    <div id="flush-collapseCharacteristics" class="accordion-collapse collapse" aria-labelledby="flush-headingCharacteristics" data-bs-parent="#accordionFlushOverview">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling
+                            up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
