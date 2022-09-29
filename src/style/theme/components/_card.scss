@@ -1,6 +1,11 @@
 .card {
     box-shadow: $box-shadow-sm;
     border: 0;
+    .fs-11 {
+        @include media-breakpoint-down(md) {
+            font-size: .75rem!important;
+        }
+    }
     .card-body {
         .card-title {
             color: $black-89;

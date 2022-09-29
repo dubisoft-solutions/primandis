@@ -73,6 +73,11 @@
             padding-left: 0;
         }
     }
+    .mb-7 {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 3.125rem!important;
+        }
+    }
 }
 
 .calculator {
