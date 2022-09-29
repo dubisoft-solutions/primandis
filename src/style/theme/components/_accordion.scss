@@ -30,6 +30,12 @@
 }
 
 .accordion {
+    .btn-link {
+        font-size: 1.25rem!important;
+        @include media-breakpoint-down(md) {
+            font-size: .75rem!important;
+        }
+    }
     &.accordion-flush {
         .accordion-item {
             .accordion-header {
