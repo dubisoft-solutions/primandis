@@ -33,19 +33,14 @@ $icon-name-bag: "\E005";
 $icon-name-calculator: "\E006"; 
 $icon-name-checkmark-circle: "\E007"; 
 $icon-name-circle: "\E008"; 
-$icon-name-coin: "\E009"; 
-$icon-name-desktop: "\E00A"; 
-$icon-name-health-check: "\E00B"; 
-$icon-name-info: "\E00C"; 
-$icon-name-information-mark: "\E00D"; 
-$icon-name-information: "\E00E"; 
-$icon-name-money: "\E00F"; 
-$icon-name-notes: "\E010"; 
-$icon-name-percent: "\E011"; 
-$icon-name-safety: "\E012"; 
-$icon-name-search: "\E013"; 
-$icon-name-shield: "\E014"; 
-$icon-name-shopping-bag: "\E015"; 
+$icon-name-health-check: "\E009"; 
+$icon-name-info: "\E00A"; 
+$icon-name-information-mark: "\E00B"; 
+$icon-name-information: "\E00C"; 
+$icon-name-money: "\E00D"; 
+$icon-name-percent: "\E00E"; 
+$icon-name-safety: "\E00F"; 
+$icon-name-search: "\E010"; 
 
 
 @function icon-char($filename) {
@@ -75,44 +70,29 @@ $icon-name-shopping-bag: "\E015";
 	@if $filename == circle {
 		$char: "\E008";
 	}
-	@if $filename == coin {
+	@if $filename == health-check {
 		$char: "\E009";
 	}
-	@if $filename == desktop {
+	@if $filename == info {
 		$char: "\E00A";
 	}
-	@if $filename == health-check {
+	@if $filename == information-mark {
 		$char: "\E00B";
 	}
-	@if $filename == info {
+	@if $filename == information {
 		$char: "\E00C";
 	}
-	@if $filename == information-mark {
+	@if $filename == money {
 		$char: "\E00D";
 	}
-	@if $filename == information {
+	@if $filename == percent {
 		$char: "\E00E";
 	}
-	@if $filename == money {
+	@if $filename == safety {
 		$char: "\E00F";
 	}
-	@if $filename == notes {
-		$char: "\E010";
-	}
-	@if $filename == percent {
-		$char: "\E011";
-	}
-	@if $filename == safety {
-		$char: "\E012";
-	}
 	@if $filename == search {
-		$char: "\E013";
-	}
-	@if $filename == shield {
-		$char: "\E014";
-	}
-	@if $filename == shopping-bag {
-		$char: "\E015";
+		$char: "\E010";
 	}
 
 	@return $char;
@@ -153,12 +133,6 @@ $icon-name-shopping-bag: "\E015";
 .icon-circle {
 	@include icon(circle);
 }
-.icon-coin {
-	@include icon(coin);
-}
-.icon-desktop {
-	@include icon(desktop);
-}
 .icon-health-check {
 	@include icon(health-check);
 }
@@ -174,9 +148,6 @@ $icon-name-shopping-bag: "\E015";
 .icon-money {
 	@include icon(money);
 }
-.icon-notes {
-	@include icon(notes);
-}
 .icon-percent {
 	@include icon(percent);
 }
@@ -185,10 +156,4 @@ $icon-name-shopping-bag: "\E015";
 }
 .icon-search {
 	@include icon(search);
-}
-.icon-shield {
-	@include icon(shield);
-}
-.icon-shopping-bag {
-	@include icon(shopping-bag);
 }
