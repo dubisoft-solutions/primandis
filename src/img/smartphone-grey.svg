@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 286">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2d2d2d;
+      }
+    </style>
+  </defs>
+  <g id="Handy_grau" data-name="Handy grau">
+    <path class="cls-1" d="M113,0H23C10.32,0,0,10.32,0,23v240c0,12.68,10.32,23,23,23H113c12.68,0,23-10.32,23-23V23c0-12.68-10.32-23-23-23Zm17,263c0,9.38-7.63,17-17,17H23c-9.37,0-17-7.62-17-17V23C6,13.63,13.63,6,23,6h28.67v2.5c0,1.93,1.57,3.5,3.5,3.5h25.66c1.93,0,3.5-1.57,3.5-3.5v-2.5h28.67c9.37,0,17,7.63,17,17v240Z"/>
+  </g>
+</svg>
