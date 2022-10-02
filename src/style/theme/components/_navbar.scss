@@ -236,31 +236,6 @@ $scrolled-navbar-sm-height: 2.625rem;
     color: $black-45!important;
 }
 
-.nav-pills {
-    background-color: $blue;
-    border-radius: $border-radius-sm;
-    box-shadow: $box-shadow-lg;
-    padding: 94px 40px;
-    min-width: 387px;
-    .nav-link {
-        font-weight: bold;
-        font-size: 1.875rem;
-        color: $white;
-        text-align: start;
-        padding: .5rem 0;
-        &:hover,
-        &.active {
-            font-weight: bold;
-            color: $white;
-            background-color: transparent;
-        }
-        &.sub-link {
-            font-weight: $fw-medium;
-            padding-left: 40px;
-        }
-    }
-}
-
 .dropdown-menu[data-bs-popper] {
     margin-top: 0;
 }

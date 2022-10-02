@@ -52,6 +52,7 @@ $input-border-radius: 0;
 $nav-link-font-weight: normal;
 $nav-link-font-size: .875rem;
 $nav-link-color: $black-45 !default;
+$main-navbar-height: 4.5rem;
 // card
 $card-box-shadow: $box-shadow-sm;
 $card-border-radius: 0;
@@ -76,3 +77,20 @@ $accordion-body-padding-x: 2.5rem;
 $input-group-addon-bg: transparent;
 $input-group-addon-border-color: transparent;
 $input-group-addon-color: $white;
+// break points
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1548px
+);
+// containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1488px
+);
