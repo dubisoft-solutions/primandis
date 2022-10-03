@@ -142,6 +142,18 @@
             }
         }
     }
+    .list-items {
+        li {
+            @include media-breakpoint-down(md) {
+                font-size: .75rem;
+            }
+        }
+    }
+    .pt-20 {
+        @include media-breakpoint-down(md) {
+            padding-top: 2.188rem!important;
+        }
+    }
     .form-control {
         @include media-breakpoint-down(md) {
             width: 25%;
@@ -191,12 +203,33 @@
 }
 
 .product-hero {
+    .subtitle {
+        font-size: 3.125rem;
+    }
     @include media-breakpoint-between(md, xxl) {
+        .subtitle {
+            font-size: 1.875rem;
+        }
         h2 {
             font-size: 3.125rem!important;
         }
         .btn-sm {
             font-size: 1.25rem!important;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .subtitle {
+            font-size: 1.063rem;
+        }
+        h2 {
+            font-size: 1.3rem!important;
+        }
+        .mb-18 {
+            margin-bottom: 3.625rem!important;
+        }
+        .btn-sm {
+            font-size: .75rem!important;
+            padding: .5rem 1rem!important;
         }
     }
 }

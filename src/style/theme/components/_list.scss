@@ -48,6 +48,10 @@ ul {
                 color: $blue;
                 margin-left: 0;
                 padding-right: 1.25rem;
+                @include media-breakpoint-down(md) {
+                    font-size: .5rem;
+                    padding-right: .75rem;
+                }
             }
         }
     }

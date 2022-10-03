@@ -1,7 +1,5 @@
 .shop {
     .nav-pills {
-        
-        
         .nav-link {
             font-weight: bold;
             font-size: 1.875rem;
@@ -20,22 +18,18 @@
             }
         }
     }
-
     .products-filter-container {
         top: calc(#{$main-navbar-height} + 2rem);
         position: fixed;
         min-height: calc(100vh - #{$main-navbar-height} - 2rem);
         max-height: calc(100vh - #{$main-navbar-height} - 2rem);
         padding-right: 1rem;
-        
         width: 30%;
         display: flex;
         justify-content: right;
-    
         .products-filter-panel {
             overflow-y: auto;
             padding: 0 1.5rem;
-
             .products-filter-content {
                 background-color: $blue;
                 border-radius: $border-radius-sm;
@@ -43,20 +37,18 @@
             }
         }
     }
-
     @mixin make-shop-content-container( $max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
         margin-left: 30%;
-    
-        @each $breakpoint, $container-max-width in $max-widths {
+        @each $breakpoint,
+        $container-max-width in $max-widths {
             @include media-breakpoint-up($breakpoint, $breakpoints) {
-                max-width: calc( 40% - (40% - #{$container-max-width}) / 2 );
+                max-width: calc( 40% - (40% - #{$container-max-width}) / 2);
             }
         }
+        width: 70%;
     }
-  
     .shop-content-container {
         @include make-container();
         @include make-shop-content-container();
     }
 }
-
