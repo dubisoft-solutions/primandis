@@ -1,7 +1,3 @@
-.cursor-pointer {
-    cursor: pointer;
-}
-
 .text-secondary {
     color: $black-89!important;
 }
@@ -44,6 +40,17 @@
 
 .border-bottom {
     border-bottom: 1px solid #B6B6B6!important;
+}
+
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1488px;
+    }
 }
 
 @include media-breakpoint-down(xl) {
@@ -173,5 +180,10 @@
 @include media-breakpoint-between(md, xxl) {
     .fs-3 {
         font-size: 2.5rem!important;
+    }
+    .products {
+        .fs-3 {
+            font-size: 2rem!important;
+        }
     }
 }

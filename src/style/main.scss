@@ -147,6 +147,58 @@
             width: 25%;
         }
     }
+    .product-title {
+        font-size: 3.125rem;
+        @include media-breakpoint-between(md, xxl) {
+            font-size: 2.25rem;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 1.063rem;
+        }
+    }
+    .product-details {
+        font-size: 2.5rem;
+        @include media-breakpoint-between(md, xxl) {
+            font-size: 1.5rem;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 1.063rem;
+        }
+    }
+    .product-price {
+        font-size: 1.563rem;
+        @include media-breakpoint-between(md, xxl) {
+            font-size: 1.25rem;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: .75rem;
+        }
+    }
+}
+
+.product-block {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    .icon {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+}
+
+.product-hero {
+    @include media-breakpoint-between(md, xxl) {
+        h2 {
+            font-size: 3.125rem!important;
+        }
+        .btn-sm {
+            font-size: 1.25rem!important;
+        }
+    }
 }
 
 .benefits-workers {
