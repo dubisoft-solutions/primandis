@@ -22,17 +22,17 @@
             padding: 1rem 2.875rem;
         }
     }
-    &.btn-xs {
-        font-weight: 500;
-        font-size: .875rem;
-        line-height: 1.125rem;
-        padding: .5rem 1.75rem;
-        @include media-breakpoint-down(md) {
-            font-size: .625rem;
-            line-height: .813rem;
-            padding: .281rem .75rem;
-        }
-    }
+    // &.btn-xs {
+    //     font-weight: 500;
+    //     font-size: .875rem;
+    //     line-height: 1.125rem;
+    //     padding: .5rem 1.75rem;
+    //     @include media-breakpoint-down(md) {
+    //         font-size: .625rem;
+    //         line-height: .813rem;
+    //         padding: .281rem .75rem;
+    //     }
+    // }
     &:hover,
     &:focus {
         --bs-btn-hover-color: #{$white};
