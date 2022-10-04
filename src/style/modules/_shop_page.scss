@@ -2,13 +2,11 @@
     @include media-breakpoint-down(lg) {
         &.filter-panel-opened {
             overflow: hidden; // block background scroll
-    
             .hide-when-mobile-menu-opened {
                 visibility: hidden;
             }
         }
     }
-
     .hero {
         .subtitle {
             font-size: 3.125rem;
@@ -26,13 +24,10 @@
         }
         @include media-breakpoint-down(md) {
             .subtitle {
-                font-size: 1.063rem;
+                font-size: 1.063rem!important;
             }
             h2 {
-                font-size: 1.3rem!important;
-            }
-            .mb-18 {
-                margin-bottom: 3.625rem!important;
+                font-size: 1.5rem!important;
             }
             .btn-sm {
                 font-size: .75rem!important;
@@ -40,7 +35,6 @@
             }
         }
     }
-
     .nav-pills {
         .nav-link {
             font-weight: bold;
@@ -60,34 +54,37 @@
             }
         }
     }
-
     .products-filter-panel {
-    
         .filter-bg {
             background-color: $blue;
             border-radius: $border-radius-sm;
             box-shadow: $box-shadow-lg;
         }
-
         .products-filter-content {
             display: none;
-
             @include media-breakpoint-up(lg) {
                 display: block
             }
         }
-
         .products-filter-mobile-toggler {
             display: none;
-
+            width: 3rem;
+            height: 3rem;
+            position: relative;
+            .icon {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+            }
             @include media-breakpoint-down(lg) {
                 display: block
             }
         }
-
         @include media-breakpoint-down(lg) {
             &.show {
-
                 &::before {
                     position: fixed;
                     content: '';
@@ -95,10 +92,9 @@
                     top: 0;
                     bottom: 0;
                     right: 0;
-                    background-color: red;
+                    background-color: rgba(0, 0, 0, .16);
                     z-index: $zindex-fixed + 1;
                 }
-
                 .products-filter-content {
                     display: block; // make it visible
                     position: fixed;
@@ -107,10 +103,8 @@
                     bottom: 0;
                     width: 95%;
                     z-index: $zindex-fixed + 2;
-
                     border-radius: 0;
                 }
-
                 .scrollable {
                     overflow-y: auto;
                     max-height: calc(100vh - 4.5rem);
@@ -118,21 +112,6 @@
             }
         }
     }
-
-    .product-block {
-        width: 3rem;
-        height: 3rem;
-        position: relative;
-        .icon {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%)
-        }
-    }
-
     // @mixin make-shop-content-container( $max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
     //     margin-left: 30%;
     //     @each $breakpoint,
