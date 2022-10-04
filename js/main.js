@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
     addClassToBodyWhenMobileMenuOpens();
     initProductsPicturesSlider();
     initScrollToTopBtnHandler();
+    initProductsFilterMobileToggler();
+    initFixedElementsBellowNavbarTracker()
 });
 
 
@@ -160,5 +162,55 @@ function initScrollToTopBtnHandler() {
         }
         window.requestAnimationFrame(step);
     }
+}
+
+function initProductsFilterMobileToggler() {
+    var togglers = document.querySelectorAll('.products-filter-mobile-toggler');
+    var filterPanel = document.querySelector('.products-filter-panel');
+    if (!filterPanel) return;
+
+    togglers.forEach(function(toggler) {
+        toggler.addEventListener('click', function(e) {
+            e.preventDefault();
+            var addClassToBody = filterPanel.classList.toggle('show');
+            document.querySelector('body').classList.toggle('filter-panel-opened', addClassToBody);
+        })
+    })
+}
+
+function initFixedElementsBellowNavbarTracker() {
+    var elementsToTrack = document.querySelectorAll('.make-child-div-fixed-bellow-navbar ');
+    if (elementsToTrack.length == 0) return; // nothing to track
+
+    var navbar = document.querySelector('.top-navbar');
+    if (!navbar) return; // no navbar on the page, so nothing to track
+
+    var navbarHeight = navbar.clientHeight;
+    console.log('height',  navbarHeight);
+
+    var lastKnownScrollPosition = 0;
+    var ticking = false;
+    var gapBetweenElemAndNavbarPx = 20;
+
+    function doSomething(scrollPos) {
+        elementsToTrack.forEach(function(el) {
+            var offset = el.getBoundingClientRect();
+            el.classList.toggle('fixed', offset.top - gapBetweenElemAndNavbarPx < navbarHeight);
+            el.style.setProperty('--fixed-elem-position', (navbarHeight + gapBetweenElemAndNavbarPx) + 'px');      
+        });
+    }
+
+    document.addEventListener('scroll', function(e) {
+        lastKnownScrollPosition = window.scrollY;
+
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                doSomething(lastKnownScrollPosition);
+                ticking = false;
+            });
+
+            ticking = true;
+        }
+    });
 }
 //# sourceMappingURL=main.js.map

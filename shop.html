@@ -84,11 +84,11 @@
         </nav>
     </header>
 
-    <section class="product-hero bg-primary pt-26 pb-20 position-relative">
-        <div class="shop-content-container ">
+    <section class="hero bg-primary pt-26 pb-20 position-relative">
+        <div class="container ">
             <div class="row">
                 <div class="col-12">
-                    <div class="row justify-content-end mb-5">
+                    <div class="row justify-content-end mb-5 pb-lg-0 pb-4">
                         <div class="col-lg-3 col-6">
                             <div class="shadow-sm bg-white text-center px-lg-2 py-lg-4 px-2 py-2">
                                 <img src="img/logo.svg" alt="Logo" class="w-100">
@@ -101,11 +101,11 @@
                             <p class="subtitle fw-light">Im Shop von primandis</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 pb-xl-0 pb-3">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-6 pb-xl-0 pb-3 text-xl-start text-center">
                             <a href="#" class="btn btn-primary btn-sm px-4">Steuerliche Daten anpassen</a>
                         </div>
-                        <div class="col-xl-6 col-lg-6">
+                        <div class="col-xl-6 col-lg-6 col-10 text-xl-start text-center">
                             <p class="text-start">* Bitte geben Sie ein paar Daten an, damit wir Ihnen Ihre persönlichen Preise anzeigen können. </p>
                         </div>
                     </div>
@@ -115,115 +115,129 @@
     </section>
 
     <section class="products pt-20 pb-12">
-        <div class="shop-content-container">
-            <div class="row pb-4">
-                <div class="col-xl-4 col-lg-5 col-4">
-                    <img src="img/ipad.svg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
-                </div>
-                <div class="col-xl-8 col-lg-7 col-8">
-                    <p class="product-title fw-light mb-0">Apple iPad Air 10.0 WiFi MYFW2FD/A</p>
-                    <div class="d-flex flex-xl-row flex-column justify-content-between align-items-xl-center align-items-start mb-xl-4 mb-3">
-                        <p class="product-details fw-light mb-0">256 GB, iOS, silber</p>
-                        <div class="d-flex align-items-center">
-                            <p class="text-danger product-price text-decoration-line-through mb-0">728,99 €</p>
-                            <p class="text-success fw-medium product-details mb-0 ps-4">434,70 €</p>
-                        </div>
-                    </div>
-                    <ul class="list-items with-circle mb-xl-4 mb-3">
-                        <li>hat schnelle, einfache und sichere Touch ID</li>
-                        <li>arbeitet mit den fortschrittlichsten A14 Bionic Chip</li>
-                        <li>mit Unterstützung für den Apple Pencis (2. Geneation) und das</li>
-                        <li>Magic Keyboard</li>
-                        <li>erhältlich in Silber, Space Grau, Roségold, Grün und Sky Blau</li>
-                    </ul>
-                    <a href="product.html" class="btn-link text-success fw-normal">auf Lager</a>
-                </div>
-            </div>
-
-            <div class="border-bottom mb-4"></div>
-
-            <div class="row pb-4">
-                <div class="col-xl-4 col-lg-5 col-4">
-                    <img src="img/whatch.svg" alt="Apple Watch Series 7 Aluminium" class="w-100">
-                </div>
-                <div class="col-xl-8 col-lg-7 col-8">
-                    <p class="product-title fw-light mb-0">Apple Watch Series 7 Aluminium</p>
-                    <div class="d-flex flex-xl-row flex-column justify-content-between align-items-xl-center align-items-start mb-xl-4 mb-3">
-                        <p class="product-details fw-light mb-0">45mm mitternacht</p>
-                        <div class="d-flex align-items-center">
-                            <p class="text-danger product-price text-decoration-line-through mb-0">419,00 €</p>
-                            <p class="text-success fw-medium product-details mb-0 ps-4">246,47 €</p>
-                        </div>
-                    </div>
-                    <ul class="list-items with-circle mb-xl-4 mb-3">
-                        <li>Smartwatch für iOS</li>
-                        <li>Wasserdicht bis 50m</li>
-                        <li>Touchscreen</li>
-                        <li>Aluminiumgehäuse (38mm) und Ion-X Glas</li>
-                        <li>Kunststoffarmband</li>
-                    </ul>
-                    <a href="#" class="btn-link text-warning fw-normal">Bestellartikel</a>
-                </div>
-            </div>
-
-            <div class="border-bottom mb-4"></div>
-
+        <div class="container">
             <div class="row">
-                <div class="col-xl-4 col-lg-5 col-4">
-                    <img src="img/iphone.svg" alt="Apple iPhone 13 Pro MLVK3ZD/A" class="w-100">
-                </div>
-                <div class="col-xl-8 col-lg-7 col-8">
-                    <p class="product-title fw-light mb-0">Apple iPhone 13 Pro MLVK3ZD/A</p>
-                    <div class="d-flex flex-xl-row flex-column justify-content-between align-items-xl-center align-items-start mb-xl-4 mb-3">
-                        <p class="product-details fw-light mb-0">256 GB, iOS, grün</p>
-                        <div class="d-flex align-items-center">
-                            <p class="text-danger product-price text-decoration-line-through mb-0">1.268,99 €</p>
-                            <p class="text-success fw-medium product-details mb-0 ps-4">746,47 €</p>
+                <div class="col-2 col-lg-3">
+                    <div class="products-filter-panel">
+                        <div class="products-filter-content filter-bg nav flex-column nav-pills py-4">
+                            <div class="products-filter-panel-header px-4 mb-3 d-flex justify-content-between">
+                                <icon class="icon icon-exit text-white products-filter-mobile-toggler"></icon>
+                                <icon class="icon icon-search text-white"></icon>
+                            </div>
+
+                            <div class="scrollable px-4">
+                                <div class="search-block mb-20">
+                                    <div class="input-group text-lg-start text-center mb-3">
+                                        <button class="input-group-text" id="search">
+                                            <icon class="icon-search"></icon>
+                                        </button>
+                                        <input type="text" class="form-control pe-0" placeholder="Suche…" aria-label="Search" aria-describedby="search">
+                                    </div>
+
+                                    <div class="search-results">
+                                        <p class="text-white ps-4 ms-3">20.677 Ergebnisse</p>
+                                    </div>
+                                </div>
+
+                                <button class="nav-link pb-4" type="button">Filter</button>
+                                <button class="nav-link sub-link">Hersteller</button>
+                                <button class="nav-link sub-link">Kategorie</button>
+                                <button class="nav-link sub-link">Preis</button>
+                                <button class="nav-link sub-link">Artikel auf Lager</button>
+                                <button class="nav-link sub-link">Neuste Artikel</button>
+                                <button class="nav-link pt-4">Filter zurücksetzen</button>
+                            </div>
+
+                        </div>
+
+                        <div class="make-child-div-fixed-bellow-navbar">
+                            <div class="products-filter-mobile-toggler filter-bg">
+                                <icon class="icon icon-exit text-white fs-4"></icon>
+                            </div>
                         </div>
                     </div>
-                    <ul class="list-items with-circle mb-xl-4 mb-3">
-                        <li>Smartphone</li>
-                        <li>Apple iOS 15</li>
-                        <li>Display: 15,5 cm (6.1’’)</li>
-                        <li>256 GB Speicher</li>
-                        <li>Dual-Sim</li>
-                    </ul>
-                    <a href="#" class="btn-link text-success fw-normal">2-3 Werktage</a>
+                </div>
+
+                <div class="col-10 col-lg-9 producs-list">
+                    <div class="row pb-4">
+                        <div class="col-xl-4 col-lg-5 col-4">
+                            <img src="img/ipad.svg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                        </div>
+                        <div class="col-xl-8 col-lg-7 col-8">
+                            <p class="product-title fw-light mb-0">Apple iPad Air 10.0 WiFi MYFW2FD/A</p>
+                            <div class="d-flex flex-xl-row flex-column justify-content-between align-items-xl-center align-items-start mb-xl-4 mb-3">
+                                <p class="product-details fw-light mb-0">256 GB, iOS, silber</p>
+                                <div class="d-flex align-items-center">
+                                    <p class="text-danger product-price text-decoration-line-through mb-0">728,99 €</p>
+                                    <p class="text-success fw-medium product-details mb-0 ps-4">434,70 €</p>
+                                </div>
+                            </div>
+                            <ul class="list-items with-circle mb-xl-4 mb-3">
+                                <li>hat schnelle, einfache und sichere Touch ID</li>
+                                <li>arbeitet mit den fortschrittlichsten A14 Bionic Chip</li>
+                                <li>mit Unterstützung für den Apple Pencis (2. Geneation) und das</li>
+                                <li>Magic Keyboard</li>
+                                <li>erhältlich in Silber, Space Grau, Roségold, Grün und Sky Blau</li>
+                            </ul>
+                            <a href="product.html" class="btn-link text-success fw-normal">auf Lager</a>
+                        </div>
+                    </div>
+
+                    <div class="border-bottom mb-4"></div>
+
+                    <div class="row pb-4">
+                        <div class="col-xl-4 col-lg-5 col-4">
+                            <img src="img/whatch.svg" alt="Apple Watch Series 7 Aluminium" class="w-100">
+                        </div>
+                        <div class="col-xl-8 col-lg-7 col-8">
+                            <p class="product-title fw-light mb-0">Apple Watch Series 7 Aluminium</p>
+                            <div class="d-flex flex-xl-row flex-column justify-content-between align-items-xl-center align-items-start mb-xl-4 mb-3">
+                                <p class="product-details fw-light mb-0">45mm mitternacht</p>
+                                <div class="d-flex align-items-center">
+                                    <p class="text-danger product-price text-decoration-line-through mb-0">419,00 €</p>
+                                    <p class="text-success fw-medium product-details mb-0 ps-4">246,47 €</p>
+                                </div>
+                            </div>
+                            <ul class="list-items with-circle mb-xl-4 mb-3">
+                                <li>Smartwatch für iOS</li>
+                                <li>Wasserdicht bis 50m</li>
+                                <li>Touchscreen</li>
+                                <li>Aluminiumgehäuse (38mm) und Ion-X Glas</li>
+                                <li>Kunststoffarmband</li>
+                            </ul>
+                            <a href="#" class="btn-link text-warning fw-normal">Bestellartikel</a>
+                        </div>
+                    </div>
+
+                    <div class="border-bottom mb-4"></div>
+
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5 col-4">
+                            <img src="img/iphone.svg" alt="Apple iPhone 13 Pro MLVK3ZD/A" class="w-100">
+                        </div>
+                        <div class="col-xl-8 col-lg-7 col-8">
+                            <p class="product-title fw-light mb-0">Apple iPhone 13 Pro MLVK3ZD/A</p>
+                            <div class="d-flex flex-xl-row flex-column justify-content-between align-items-xl-center align-items-start mb-xl-4 mb-3">
+                                <p class="product-details fw-light mb-0">256 GB, iOS, grün</p>
+                                <div class="d-flex align-items-center">
+                                    <p class="text-danger product-price text-decoration-line-through mb-0">1.268,99 €</p>
+                                    <p class="text-success fw-medium product-details mb-0 ps-4">746,47 €</p>
+                                </div>
+                            </div>
+                            <ul class="list-items with-circle mb-xl-4 mb-3">
+                                <li>Smartphone</li>
+                                <li>Apple iOS 15</li>
+                                <li>Display: 15,5 cm (6.1’’)</li>
+                                <li>256 GB Speicher</li>
+                                <li>Dual-Sim</li>
+                            </ul>
+                            <a href="#" class="btn-link text-success fw-normal">2-3 Werktage</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
-
-    <div class="products-filter-container">
-        <div class="products-filter-panel">
-            <div class="products-filter-content nav flex-column nav-pills p-4 d-xl-block d-none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <div class="search-block mb-20">
-                    <div class="input-group text-lg-start text-center mb-3">
-                        <button class="input-group-text" id="search">
-                            <icon class="icon-search"></icon>
-                        </button>
-                        <input type="text" class="form-control pe-0" placeholder="Suche…" aria-label="Search" aria-describedby="search">
-                    </div>
-
-                    <div class="search-results">
-                        <p class="text-white ps-4 ms-3">20.677 Ergebnisse</p>
-                    </div>
-                </div>
-
-                <button class="nav-link pb-4" type="button">Filter</button>
-                <button class="nav-link sub-link">Hersteller</button>
-                <button class="nav-link sub-link">Kategorie</button>
-                <button class="nav-link sub-link"></button>
-                <button class="nav-link sub-link">Artikel auf Lager</button>
-                <button class="nav-link sub-link">Neuste Artikel</button>
-                <button class="nav-link pt-4">Filter zurücksetzen</button>
-            </div>
-            <div class="products-filter-content nav flex-column nav-pills product-block d-xl-none d-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <icon class="icon icon-exit text-white fs-5"></icon>
-            </div>
-        </div>
-    </div>
 
     <!-- footer -->
     <footer class="footer">
