@@ -57,6 +57,9 @@ ul {
     }
     &.employer {
         padding-left: 14.5rem;
+        @include media-breakpoint-down(md) {
+            padding-left: 0;
+        }
     }
 }
 

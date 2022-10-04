@@ -33,15 +33,16 @@ $icon-name-bag: "\E005";
 $icon-name-calculator: "\E006"; 
 $icon-name-checkmark-circle: "\E007"; 
 $icon-name-circle: "\E008"; 
-$icon-name-exit: "\E009"; 
-$icon-name-health-check: "\E00A"; 
-$icon-name-info: "\E00B"; 
-$icon-name-information-mark: "\E00C"; 
-$icon-name-information: "\E00D"; 
-$icon-name-money: "\E00E"; 
-$icon-name-percent: "\E00F"; 
-$icon-name-safety: "\E010"; 
-$icon-name-search: "\E011"; 
+$icon-name-close: "\E009"; 
+$icon-name-exit: "\E00A"; 
+$icon-name-health-check: "\E00B"; 
+$icon-name-info: "\E00C"; 
+$icon-name-information-mark: "\E00D"; 
+$icon-name-information: "\E00E"; 
+$icon-name-money: "\E00F"; 
+$icon-name-percent: "\E010"; 
+$icon-name-safety: "\E011"; 
+$icon-name-search: "\E012"; 
 
 
 @function icon-char($filename) {
@@ -71,32 +72,35 @@ $icon-name-search: "\E011";
 	@if $filename == circle {
 		$char: "\E008";
 	}
-	@if $filename == exit {
+	@if $filename == close {
 		$char: "\E009";
 	}
-	@if $filename == health-check {
+	@if $filename == exit {
 		$char: "\E00A";
 	}
-	@if $filename == info {
+	@if $filename == health-check {
 		$char: "\E00B";
 	}
-	@if $filename == information-mark {
+	@if $filename == info {
 		$char: "\E00C";
 	}
-	@if $filename == information {
+	@if $filename == information-mark {
 		$char: "\E00D";
 	}
-	@if $filename == money {
+	@if $filename == information {
 		$char: "\E00E";
 	}
-	@if $filename == percent {
+	@if $filename == money {
 		$char: "\E00F";
 	}
-	@if $filename == safety {
+	@if $filename == percent {
 		$char: "\E010";
 	}
-	@if $filename == search {
+	@if $filename == safety {
 		$char: "\E011";
+	}
+	@if $filename == search {
+		$char: "\E012";
 	}
 
 	@return $char;
@@ -136,6 +140,9 @@ $icon-name-search: "\E011";
 }
 .icon-circle {
 	@include icon(circle);
+}
+.icon-close {
+	@include icon(close);
 }
 .icon-exit {
 	@include icon(exit);
