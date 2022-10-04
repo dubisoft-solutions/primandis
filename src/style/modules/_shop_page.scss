@@ -1,4 +1,14 @@
 .shop {
+    @include media-breakpoint-down(lg) {
+        &.filter-panel-opened {
+            overflow: hidden; // block background scroll
+    
+            .hide-when-mobile-menu-opened {
+                visibility: hidden;
+            }
+        }
+    }
+
     .hero {
         .subtitle {
             font-size: 3.125rem;
@@ -50,11 +60,63 @@
             }
         }
     }
-   
-    .products-filter-content {
-        background-color: $blue;
-        border-radius: $border-radius-sm;
-        box-shadow: $box-shadow-lg;
+
+    .products-filter-panel {
+    
+        .filter-bg {
+            background-color: $blue;
+            border-radius: $border-radius-sm;
+            box-shadow: $box-shadow-lg;
+        }
+
+        .products-filter-content {
+            display: none;
+
+            @include media-breakpoint-up(lg) {
+                display: block
+            }
+        }
+
+        .products-filter-mobile-toggler {
+            display: none;
+
+            @include media-breakpoint-down(lg) {
+                display: block
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            &.show {
+
+                &::before {
+                    position: fixed;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    background-color: red;
+                    z-index: $zindex-fixed + 1;
+                }
+
+                .products-filter-content {
+                    display: block; // make it visible
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 95%;
+                    z-index: $zindex-fixed + 2;
+
+                    border-radius: 0;
+                }
+
+                .scrollable {
+                    overflow-y: auto;
+                    max-height: calc(100vh - 4.5rem);
+                }
+            }
+        }
     }
 
     .product-block {

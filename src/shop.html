@@ -40,10 +40,15 @@
     <section class="products pt-20 pb-12">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <!-- <div class="products-filter-container"> -->
-                        <!-- <div class="products-filter-panel"> -->
-                            <div class="products-filter-content nav flex-column nav-pills p-4">
+                <div class="col-2 col-lg-3">
+                    <div class="products-filter-panel">
+                        <div class="products-filter-content filter-bg nav flex-column nav-pills py-4">
+                            <div class="products-filter-panel-header px-4 mb-3 d-flex justify-content-between">
+                                <icon class="icon icon-exit text-white products-filter-mobile-toggler"></icon>
+                                <icon class="icon icon-search text-white"></icon>
+                            </div>
+
+                            <div class="scrollable px-4">
                                 <div class="search-block mb-20">
                                     <div class="input-group text-lg-start text-center mb-3">
                                         <button class="input-group-text" id="search">
@@ -65,14 +70,18 @@
                                 <button class="nav-link sub-link">Neuste Artikel</button>
                                 <button class="nav-link pt-4">Filter zurücksetzen</button>
                             </div>
-                            <!-- <div class="products-filter-content nav flex-column nav-pills product-block d-xl-none d-block">
+                            
+                        </div>
+
+                        <div class="make-child-div-fixed-bellow-navbar">
+                            <div class="products-filter-mobile-toggler filter-bg ps-2 pe-1">
                                 <icon class="icon icon-exit text-white fs-5"></icon>
-                            </div> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-lg-9 producs-list">
+                <div class="col-10 col-lg-9 producs-list">
                     <div class="row pb-4">
                         <div class="col-xl-4 col-lg-5 col-4">
                             <img src="img/ipad.svg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
