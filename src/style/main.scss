@@ -289,7 +289,7 @@
 
 .staff {
     position: relative;
-    height: 180vh;
+    height: 170vh;
     .row {
         margin: 0;
         position: absolute;
@@ -300,6 +300,9 @@
     }
     @include media-breakpoint-down(md) {
         height: 80vh;
+    }
+    @include media-breakpoint-between(md, xxl) {
+        height: 120vh;
     }
     .bg-decor {
         position: absolute;
