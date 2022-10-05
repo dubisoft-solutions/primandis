@@ -1,13 +1,16 @@
 $scrolled-navbar-height: 3.25rem;
 $scrolled-navbar-sm-height: 2.625rem;
-
 .navbar {
     padding: 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .16);
     background-color: $gray;
     &>.nav-wrapper {
-        padding-top: 1.125rem;
-        padding-bottom: 1.125rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        @include media-breakpoint-down(md) {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
     }
     @include media-breakpoint-down(xl) {
         width: 100%;
@@ -244,7 +247,6 @@ $scrolled-navbar-sm-height: 2.625rem;
 @include media-breakpoint-down(xl) {
     .nav-menu-opened {
         overflow: hidden; // block background scroll
-
         .hide-when-mobile-menu-opened {
             visibility: hidden;
         }
@@ -258,5 +260,12 @@ $scrolled-navbar-sm-height: 2.625rem;
             position: fixed;
             top: var(--fixed-elem-position);
         }
+    }
+}
+
+.navbar-brand-img {
+    height: 2.5rem;
+    @include media-breakpoint-down(md) {
+        height: 1.5rem;
     }
 }
