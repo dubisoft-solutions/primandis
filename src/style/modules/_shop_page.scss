@@ -38,10 +38,13 @@
     .nav-pills {
         .nav-link {
             font-weight: bold;
-            font-size: 1.875rem;
+            font-size: 1.5rem;
             color: $white;
             text-align: start;
             padding: .5rem 0;
+            @include media-breakpoint-down(md) {
+                font-size: 1rem;
+            }
             &:hover,
             &.active {
                 font-weight: bold;
@@ -83,7 +86,7 @@
                 }
             }
             @include media-breakpoint-down(lg) {
-                display: block
+                display: inline-block
             }
         }
         @include media-breakpoint-down(lg) {

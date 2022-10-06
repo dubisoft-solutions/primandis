@@ -66,6 +66,11 @@
             }
             .accordion-button:not(.collapsed) {
                 &::after {
+                    display: block;
+                    @include icon-styles;
+                    content: icon-char(accordion-arrow-down);
+                    font-size: .25rem;
+                    color: $black-45;
                     background-image: none;
                 }
             }
