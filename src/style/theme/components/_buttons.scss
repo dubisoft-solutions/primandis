@@ -34,6 +34,10 @@
             line-height: .813rem;
             padding: .75rem .75rem;
         }
+        @include media-breakpoint-between(md, xxl) {
+            font-size: 1.25rem;
+            padding: .75rem .75rem;
+        }
     }
     &:hover,
     &:focus {
