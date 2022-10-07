@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initProductsPicturesSlider();
     initScrollToTopBtnHandler();
     initProductsFilterMobileToggler();
-    initFixedElementsBellowNavbarTracker()
+    initFixedElementsBellowNavbarTracker();
+    initJsLinksHandler();
 });
 
 
@@ -111,7 +112,7 @@ function initProductsPicturesSlider() {
     var sliderContainer = document.querySelector('.product-pictures-slider');
     if (!sliderContainer) return;
 
-    var slider = tns({
+    tns({
         container: sliderContainer,
         items: 3,
         slideBy: 1,
@@ -219,4 +220,23 @@ function initFixedElementsBellowNavbarTracker() {
             ticking = true;
         }
     });
+}
+
+function initJsLinksHandler() {
+    document.body.addEventListener('click', function(e) {
+        if (e.target.tagName == 'A') return; // let's keep the links working
+
+        var targetJsLinkElem = e.target.classList.contains('js-link') ? e.target : e.target.closest('.js-link');
+        
+        if (!targetJsLinkElem) return;
+
+        var href = targetJsLinkElem.dataset.href;
+        if (!href) {
+            console.error('js-link misconfigured. no data-href attribute');
+            return;
+        }
+
+        e.preventDefault(); // block the current event
+        e.ctrlKey ? window.open(href, "_blank") : window.open(href, "_self")
+    })
 }
