@@ -115,7 +115,7 @@ function addClassToBodyWhenMobileMenuOpens() {
 }
 
 function initProductsPicturesSlider() {
-    var sliderContainer = document.querySelector('.products-pictures-slider');
+    var sliderContainer = document.querySelector('.product-pictures-slider');
     if (!sliderContainer) return;
 
     var slider = tns({
@@ -130,6 +130,19 @@ function initProductsPicturesSlider() {
         mouseDrag: true,
         edgePadding: 30,
         gutter: 20,
+        nav: false,
+        center: false,
+
+        responsive: {
+            0: {
+                edgePadding: 10,
+                gutter: 5,
+            },
+            768: {
+                edgePadding: 30,
+                gutter: 10,
+            },
+        }
     });
 }
 
