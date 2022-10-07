@@ -125,6 +125,7 @@ function initProductsPicturesSlider() {
         gutter: 20,
         nav: false,
         center: false,
+        loop: false,
 
         responsive: {
             0: {
