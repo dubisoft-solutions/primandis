@@ -48,6 +48,18 @@ label {
     }
 }
 
+.form-check {
+    min-height: .875rem;
+    .form-check-input {
+        width: .875rem;
+        height: .875rem;
+        @include media-breakpoint-down(md) {
+            width: .563rem;
+            height: .563rem;
+        }
+    }
+}
+
 .products {
     .form-check-label {
         font-size: 1.563rem;
