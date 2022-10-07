@@ -139,7 +139,7 @@
 
 .products {
     .btn-primary {
-        &.btn-md {
+        &.btn-sm {
             @include media-breakpoint-down(md) {
                 font-size: .75rem;
                 line-height: .938rem;
