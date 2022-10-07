@@ -43,21 +43,34 @@ label {
 
 .form-check-label {
     font-size: 1.125rem;
+    padding-left: .938rem;
     @include media-breakpoint-down(md) {
-        font-size: .625rem;
+        font-size: .75rem;
+        padding-left: 0;
     }
 }
 
 .form-check {
-    min-height: .875rem;
+    margin-bottom: 0;
     .form-check-input {
-        width: .875rem;
-        height: .875rem;
+        &:focus {
+            box-shadow: none;
+        }
         @include media-breakpoint-down(md) {
-            width: .563rem;
-            height: .563rem;
+            width: .75rem;
+            height: .75rem;
+            margin-top: .65rem;
         }
     }
+}
+
+.form-check-input:checked[type=radio] {
+    background-image: none;
+}
+
+.form-check-input:checked {
+    background-color: $black;
+    border-color: $black;
 }
 
 .products {
