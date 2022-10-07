@@ -196,30 +196,31 @@ function initFixedElementsBellowNavbarTracker() {
     var navbarHeight = navbar.clientHeight;
     console.log('height',  navbarHeight);
 
-    var lastKnownScrollPosition = 0;
     var ticking = false;
     var gapBetweenElemAndNavbarPx = 20;
 
-    function doSomething(scrollPos) {
+    
+    document.addEventListener('scroll', eventHandler);
+    window.addEventListener('resize', eventHandler);
+
+    function eventHandler() {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                handleEvent();
+                ticking = false;
+            });
+
+            ticking = true;
+        }
+    }
+
+    function handleEvent() {
         elementsToTrack.forEach(function(el) {
             var offset = el.getBoundingClientRect();
             el.classList.toggle('fixed', offset.top - gapBetweenElemAndNavbarPx < navbarHeight);
             el.style.setProperty('--fixed-elem-position', (navbarHeight + gapBetweenElemAndNavbarPx) + 'px');      
         });
     }
-
-    document.addEventListener('scroll', function(e) {
-        lastKnownScrollPosition = window.scrollY;
-
-        if (!ticking) {
-            window.requestAnimationFrame(function() {
-                doSomething(lastKnownScrollPosition);
-                ticking = false;
-            });
-
-            ticking = true;
-        }
-    });
 }
 
 function initJsLinksHandler() {
