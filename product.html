@@ -92,22 +92,59 @@
             </div>
             <div class="row pb-lg-4 pb-1">
                 <div class="col-lg-3 col-4">
-                    <div class="product-picture-preview">
-                        <img src="img/ipad.png" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100 mb-5">
+                    <div class="product-picture-preview tab-content mb-5" id="product-picture-preview">
+                        <div class="tab-pane fade active show" id="product-pic-1" role="tabpanel" aria-labelledby="product-pic-1" tabindex="0">
+                            <img src="img/ipad.png" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                        </div>
+
+                        <div class="tab-pane fade" id="product-pic-2" role="tabpanel" aria-labelledby="product-pic-2" tabindex="0">
+                            <img src="https://creavo.primandis.de/image-cache/300x300/article-image/cu/2020-10/01aaef41c4e9f36.jpg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                        </div>
+
+                        <div class="tab-pane fade" id="product-pic-3" role="tabpanel" aria-labelledby="product-pic-3" tabindex="0">
+                            <img src="https://creavo.primandis.de/image-cache/300x300/article-image/an/2022-05/adc32c7a85ff76d.jpg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                        </div>
+
+                        <div class="tab-pane fade" id="product-pic-4" role="tabpanel" aria-labelledby="product-pic-4" tabindex="0">
+                            <img src="https://www.primandis.de/media/cache/resolve/300x300/article-image/cu/2021-05/f97e99daac79230.jpg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                        </div>
                     </div>
 
-                    <div class="product-pictures-slider">
+                    <div class="product-pictures-slider" role="tablist">
                         <div class="slide-item">
-                            <img src="img/ipad.png" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                            <a class="active link-unstyled" 
+                                href="#product-pic-1" 
+                                data-bs-toggle="tab"
+                                data-bs-target="#product-pic-1"
+                                role="tab"
+                                aria-controls="product-pic-1"
+                                aria-selected="true"
+                            >
+                                <img src="img/ipad.png" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                            </a>
                         </div>
                         <div class="slide-item">
-                            <img src="img/ipad.png" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                            <a class="link-unstyled"
+                                href="#product-pic-2"
+                                data-bs-toggle="tab"
+                                data-bs-target="#product-pic-2"
+                                role="tab"
+                                aria-controls="product-pic-2"
+                                aria-selected="false"
+                                tabindex="0"
+                            >
+                                <img src="https://creavo.primandis.de/image-cache/300x300/article-image/cu/2020-10/01aaef41c4e9f36.jpg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                            </a>
                         </div>
                         <div class="slide-item">
-                            <img src="img/ipad.png" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                            <a class="link-unstyled" href="#product-pic-3" data-bs-toggle="tab" role="tab" aria-controls="product-pic-3" aria-selected="false" tabindex="0">
+                                <img src="https://creavo.primandis.de/image-cache/300x300/article-image/an/2022-05/adc32c7a85ff76d.jpg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                            </a>
                         </div>
                         <div class="slide-item">
-                            <img src="img/ipad.png" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                            <a class="link-unstyled" href="#product-pic-4" data-bs-toggle="tab" role="tab" aria-controls="product-pic-4" aria-selected="false" tabindex="0">
+                                <img src="https://www.primandis.de/media/cache/resolve/300x300/article-image/cu/2021-05/f97e99daac79230.jpg" alt="Apple iPad Air 10.0 WiFi MYFW2FD/A" class="w-100">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -115,7 +152,7 @@
                     <p class="fs-3 text-secondary fw-medium mb-4 pb-2 d-lg-block d-none">Apple iPad Air 10.0 WiFi MYFW2FD/A <span class="d-block">256 GB, iOS, silber</span></p>
 
                     <div class="row pb-lg-4 pb-3">
-                        <div class="col-lg-8">
+                        <div class="col-xl-8">
                             <div class="row pb-lg-4 pb-0">
                                 <div class="col-lg-8 col-8">
                                     <p>Normaler Preis:</p>
@@ -145,7 +182,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-xl-4">
                             <div class="bg-muted shadow-md px-lg-3 px-2 py-lg-4 py-2">
                                 <div class="d-flex align-items-baseline">
                                     <icon class="icon icon-information-mark fs-10 pe-3"></icon>
@@ -157,18 +194,18 @@
                     </div>
                     <div class="border-bottom mb-lg-4 mb-3"></div>
                     <div class="row pt-lg-2 pt-0 pb-lg-4 pb-2">
-                        <div class="col-lg-6 col-12">
+                        <div class="col-xxl-6 col-xl-4 col-12">
                             <p>18,11 € / Monat</p>
                         </div>
-                        <div class="col-lg-3 col-6">
+                        <div class="col-xxl-3 col-xl-4 col-6">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="lease-month-count" id="32months">
                                 <label class="form-check-label pt-0" for="flexRadio32Months">
-                                    32 Monate
+                                        32 Monate
                                 </label>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-6">
+                        <div class="col-xxl-3 col-xl-4 col-6">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="lease-month-count" id="24month">
                                 <label class="form-check-label pt-0" for="flexRadio24Months">
@@ -180,19 +217,27 @@
                     <p class="mb-26">* Die Berechnung stützt sich auf ihre steuerlichen Einstellungen. Für eine Neuberechnung, passen Sie <a href="#" class="btn-link">hier</a> Ihre Einstellungen an.</p>
 
                     <div class="row">
-                        <div class="col-lg-12 mb-4 d-lg-flex d-none">
-                            <p>Verfügbarkeit: <span class="text-success ps-4">auf Lager</span></p>
+                        <div class="col-lg-6 mb-4 d-lg-flex d-none">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>Verfügbarkeit: <span class="text-success ps-4">auf Lager</span></p>
+                                </div>
+
+                                <div class="col-5 d-flex">
+                                    <label for="numberList" class="form-label mb-0 pe-1">Anzahl:</label>
+                                    <input class="form-control" list="datalistOptions" id="numberList">
+                                    <datalist id="datalistOptions">
+                                    <option value="1">
+                                    <option value="2">
+                                    <option value="3">
+                                    <option value="4">
+                                    <option value="5">
+                                </datalist>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4 d-lg-flex d-none">
-                            <label for="numberList" class="form-label mb-0 pe-1">Anzahl:</label>
-                            <input class="form-control" list="datalistOptions" id="numberList">
-                            <datalist id="datalistOptions">
-                                <option value="1">
-                                <option value="2">
-                                <option value="3">
-                                <option value="4">
-                                <option value="5">
-                            </datalist>
+                        <div class="col-lg-6 d-lg-block d-none text-end">
+                            <a href="#" class="btn btn-primary btn-sm">In den Warenkorb</a>
                         </div>
                     </div>
                 </div>
@@ -204,9 +249,8 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-between align-items-end pb-21">
-                <p class="fw-bold text-primary mb-0 d-lg-block d-none">Zurück zur Übersicht</p>
-                <div class="d-lg-none d-flex">
+            <div class="d-lg-none d-flex justify-content-between align-items-end pb-5">
+                <div class="d-flex">
                     <label for="numberList" class="form-label mb-0 pe-1">Anzahl:</label>
                     <input class="form-control" list="datalistOptions" id="numberList">
                     <datalist id="datalistOptions">
@@ -220,7 +264,7 @@
                 <a href="#" class="btn btn-primary btn-sm">In den Warenkorb</a>
             </div>
 
-            <a href="shop.html" class="btn-link d-lg-none d-block mb-lg-5 mb-3">Zurück zur Übersicht</a>
+            <a href="shop.html" class="btn-link mb-lg-5 mb-3">Zurück zur Übersicht</a>
 
             <div class="accordion accordion-flush" id="accordionFlushOverview">
                 <div class="accordion-item">
