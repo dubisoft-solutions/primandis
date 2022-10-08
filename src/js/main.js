@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initProductsPicturesSlider();
     initScrollToTopBtnHandler();
     initProductsFilterMobileToggler();
-    initFixedElementsBellowNavbarTracker()
+    initFixedElementsBellowNavbarTracker();
+    initJsLinksHandler();
 });
 
 
@@ -111,7 +112,7 @@ function initProductsPicturesSlider() {
     var sliderContainer = document.querySelector('.product-pictures-slider');
     if (!sliderContainer) return;
 
-    var slider = tns({
+    tns({
         container: sliderContainer,
         items: 3,
         slideBy: 1,
@@ -195,28 +196,48 @@ function initFixedElementsBellowNavbarTracker() {
     var navbarHeight = navbar.clientHeight;
     console.log('height',  navbarHeight);
 
-    var lastKnownScrollPosition = 0;
     var ticking = false;
     var gapBetweenElemAndNavbarPx = 20;
 
-    function doSomething(scrollPos) {
+    
+    document.addEventListener('scroll', eventHandler);
+    window.addEventListener('resize', eventHandler);
+
+    function eventHandler() {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                handleEvent();
+                ticking = false;
+            });
+
+            ticking = true;
+        }
+    }
+
+    function handleEvent() {
         elementsToTrack.forEach(function(el) {
             var offset = el.getBoundingClientRect();
             el.classList.toggle('fixed', offset.top - gapBetweenElemAndNavbarPx < navbarHeight);
             el.style.setProperty('--fixed-elem-position', (navbarHeight + gapBetweenElemAndNavbarPx) + 'px');      
         });
     }
+}
 
-    document.addEventListener('scroll', function(e) {
-        lastKnownScrollPosition = window.scrollY;
+function initJsLinksHandler() {
+    document.body.addEventListener('click', function(e) {
+        if (e.target.tagName == 'A') return; // let's keep the links working
 
-        if (!ticking) {
-            window.requestAnimationFrame(function() {
-                doSomething(lastKnownScrollPosition);
-                ticking = false;
-            });
+        var targetJsLinkElem = e.target.classList.contains('js-link') ? e.target : e.target.closest('.js-link');
+        
+        if (!targetJsLinkElem) return;
 
-            ticking = true;
+        var href = targetJsLinkElem.dataset.href;
+        if (!href) {
+            console.error('js-link misconfigured. no data-href attribute');
+            return;
         }
-    });
+
+        e.preventDefault(); // block the current event
+        e.ctrlKey ? window.open(href, "_blank") : window.open(href, "_self")
+    })
 }
