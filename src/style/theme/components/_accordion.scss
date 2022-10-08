@@ -3,12 +3,6 @@
         font-weight: bold;
         border: none!important;
         box-shadow: $box-shadow-md;
-        &::after {
-            display: none;
-            @include media-breakpoint-down(md) {
-                display: block;
-            }
-        }
         @include media-breakpoint-down(md) {
             font-size: .75rem;
             padding: .75rem .563rem;
@@ -49,13 +43,6 @@
                 box-shadow: none;
                 display: flex;
                 justify-content: space-between;
-                &::after {
-                    display: inline-block;
-                    @include icon-styles;
-                    content: icon-char(accordion-arrow-down);
-                    font-size: .25rem;
-                    color: $black-45;
-                }
                 @include media-breakpoint-between(md, xxl) {
                     font-size: 1.25rem;
                 }
