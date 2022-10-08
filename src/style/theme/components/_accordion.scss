@@ -43,6 +43,7 @@
                 box-shadow: none;
                 display: flex;
                 justify-content: space-between;
+                
                 @include media-breakpoint-between(md, xxl) {
                     font-size: 1.25rem;
                 }
@@ -53,7 +54,7 @@
             }
             .accordion-button:not(.collapsed) {
                 &::after {
-                    display: inline-block;
+                    background-image: var(--bs-accordion-btn-icon) !important;
                 }
             }
             .accordion-body {
