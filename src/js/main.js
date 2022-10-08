@@ -1,5 +1,6 @@
 //= ../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
 //= ../../node_modules/tiny-slider/dist/min/tiny-slider.js
+//= ../../node_modules/glightbox/dist/js/glightbox.min.js
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -10,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initProductsFilterMobileToggler();
     initFixedElementsBellowNavbarTracker();
     initJsLinksHandler();
+    initProductPictureGallery();
 });
 
 
@@ -240,4 +242,16 @@ function initJsLinksHandler() {
         e.preventDefault(); // block the current event
         e.ctrlKey ? window.open(href, "_blank") : window.open(href, "_self")
     })
+}
+
+function initProductPictureGallery() {
+    var selector = '[data-gallery="product-picture-gallery"]';
+    if (!document.querySelector(selector)) return;
+
+    GLightbox({
+        touchNavigation: true,
+        loop: true,
+        image: true,
+        selector: selector,
+    });
 }
