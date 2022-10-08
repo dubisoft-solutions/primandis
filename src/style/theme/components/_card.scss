@@ -45,45 +45,4 @@
             padding-bottom: 1.875rem;
         }
     }
-    &.workers {
-        .card-header {
-            padding: 1.438rem 1.563rem;
-            background-color: $blue;
-            @include media-breakpoint-down(md) {
-                padding: .625rem .688rem;
-                font-size: .75rem;
-            }
-        }
-        .card-body {
-            padding: 5.313rem 4.188rem 4.688rem 4.188rem;
-            @include media-breakpoint-down(md) {
-                padding: 1.5rem 1.875rem 2.5rem 1.875rem;
-            }
-        }
-    }
-    &.salary-conversion {
-        .pb-20 {
-            padding-bottom: .75rem!important;
-        }
-        .card-header {
-            padding: 1.438rem 1.563rem;
-            background-color: $blue;
-            @include media-breakpoint-down(md) {
-                padding: .625rem .688rem;
-                font-size: .75rem;
-            }
-        }
-        .card-body {
-            padding: 5.313rem 4.188rem 4.688rem 4.188rem;
-            @include media-breakpoint-down(md) {
-                padding: .5rem 0 2.5rem 0;
-            }
-            div {
-                font-size: 1.563rem;
-                @include media-breakpoint-down(md) {
-                    font-size: .75rem;
-                }
-            }
-        }
-    }
 }
