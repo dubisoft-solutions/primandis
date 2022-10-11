@@ -118,18 +118,4 @@
             }
         }
     }
-    // @mixin make-shop-content-container( $max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
-    //     margin-left: 30%;
-    //     @each $breakpoint,
-    //     $container-max-width in $max-widths {
-    //         @include media-breakpoint-up($breakpoint, $breakpoints) {
-    //             max-width: calc( 40% - (40% - #{$container-max-width}) / 2);
-    //         }
-    //     }
-    //     width: 70%;
-    // }
-    // .shop-content-container {
-    //     @include make-container();
-    //     @include make-shop-content-container();
-    // }
 }
