@@ -1,0 +1,90 @@
+
+$font-icons-family-name: "{{ fontName }}";
+@font-face {
+    font-family: $font-icons-family-name;
+    {% if formats.indexOf('eot')>-1 -%}
+        src: url("{{ cssFontPath }}{{ fontName }}.eot");
+    {%- endif -%}
+    {%- set eotIndex = formats.indexOf('eot') -%}
+    {%- set woff2Index = formats.indexOf('woff2') -%}
+    {%- set woffIndex = formats.indexOf('woff') -%}
+    {%- set ttfIndex = formats.indexOf('ttf') -%}
+    {%- set svgIndex = formats.indexOf('svg') -%}
+
+    src: {% if eotIndex != -1 -%}
+            url("{{ cssFontPath }}{{ fontName }}.eot") format("embedded-opentype")
+            {%- set nothing = formats.splice(eotIndex, 1) -%}
+            {%- if formats.length != 0 -%},
+             {% else -%}; {% endif -%}
+        {%- endif -%}
+        {%- if woff2Index != -1 -%}
+            url("{{ cssFontPath }}{{ fontName }}.woff2") format("woff2")
+            {%- set nothing = formats.splice(woff2Index, 1) -%}
+            {%- if formats.length != 0 -%},
+             {% else -%}; {% endif -%}
+        {%- endif -%}
+        {%- if woffIndex != -1 -%}
+            url("{{ cssFontPath }}{{ fontName }}.woff") format("woff")
+            {%- set nothing = formats.splice(woffIndex, 1) -%}
+            {%- if formats.length != 0 -%},
+             {% else -%}; {% endif -%}
+        {%- endif -%}
+        {%- if ttfIndex != -1 -%}
+            url("{{ cssFontPath }}{{ fontName }}.ttf") format("truetype")
+            {%- set nothing = formats.splice(ttfIndex, 1) -%}
+            {%- if formats.length != 0 -%},
+             {% else -%}; {% endif -%}
+        {%- endif -%}
+        {%- if svgIndex != -1 -%}
+            url("{{ cssFontPath }}{{ fontName }}.svg") format("svg");
+        {%- endif %}
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin icon-styles {
+	font-family: $font-icons-family-name;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+{% for glyph in glyphs %}
+$icon-name-{{ glyph.name }}: "\{{ glyph.unicode[0].charCodeAt(0).toString(16) }}";{% endfor %}
+
+@function icon-char($filename) {
+	$char: "";
+
+    {% for glyph in glyphs %}
+    @if $filename == {{ glyph.name }} {
+		$char: $icon-name-{{ glyph.name }};
+	}
+    {% endfor %}
+
+    @return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+{% for glyph in glyphs %}
+.{{ cssPrefix }}-{{ glyph.name }} {
+    @include icon({{ glyph.name }});
+}{% endfor %}

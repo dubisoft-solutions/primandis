@@ -1,9 +1,15 @@
-//= ../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
-//= ../../node_modules/tiny-slider/dist/min/tiny-slider.js
-//= ../../node_modules/glightbox/dist/js/glightbox.min.js
+import '../style/main.scss';
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+
+import { tns } from 'tiny-slider/src/tiny-slider';
+import GLightbox from 'glightbox';
 
 
 document.addEventListener('DOMContentLoaded', function() {
+    init();
+});
+
+export default function init() {
     initFeedbackNotesSlider();
     addClassToBodyWhenMobileMenuOpens();
     initProductsPicturesSlider();
@@ -12,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFixedElementsBellowNavbarTracker();
     initJsLinksHandler();
     initProductPictureGallery();
-});
+}
 
 
 function initFeedbackNotesSlider() {
@@ -55,7 +61,6 @@ function initFeedbackNotesSlider() {
     });
 
     slider.events.on("transitionEnd", function(info) {
-        console.log("transitionEnd", info.indexCached, info.index)
         info.slideItems[info.indexCached].classList.remove(
             "center"
         );
@@ -66,7 +71,6 @@ function initFeedbackNotesSlider() {
     });
 
     slider.events.on("newBreakpointEnd", function(info) {
-        console.log("newBreakpointEnd", info.indexCached, info.index)
         info.slideItems[info.indexCached].classList.remove(
             "center"
         );
@@ -92,7 +96,7 @@ function initFeedbackNotesSlider() {
         }
 
         if (slide.previousElementSibling && slide.previousElementSibling.classList.contains('center')) {
-            slider.goTo('next');
+            slider.goTo('next')
         }
     })
 }
@@ -196,7 +200,6 @@ function initFixedElementsBellowNavbarTracker() {
     if (!navbar) return; // no navbar on the page, so nothing to track
 
     var navbarHeight = navbar.clientHeight;
-    console.log('height',  navbarHeight);
 
     var ticking = false;
     var gapBetweenElemAndNavbarPx = 20;

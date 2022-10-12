@@ -29,6 +29,14 @@ var path = {
         img: "./src/img/**/*.*",
         fonts: "./srs/fonts/**/*.*",
         fontIcons: "./src/font_icons/icons/*.svg",
+
+        static: [
+            "./src/style/**/*.scss",
+            "./src/js/**/*.js",
+            "./srs/fonts/**/*.*",
+            "./src/font_icons/icons/*.svg",
+            "!./src/style/theme/_icons.scss"
+        ]
     },
     clean: "./dist/*",
 };
@@ -58,7 +66,8 @@ var gulp = require("gulp"),
     rimraf = require("gulp-rimraf"),
     iconfont = require('gulp-iconfont'),
     iconfontCss = require('gulp-iconfont-css'),
-    rename = require("gulp-rename");
+    rename = require("gulp-rename"),
+    webpack = require('webpack-stream');
 
 /* Main tasks */
 
@@ -79,82 +88,6 @@ gulp.task("html:build", function() {
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
         .pipe(webserver.reload({ stream: true }));
-});
-
-/**
- * Builds the svg icons to font
- */
- gulp.task('fonticons:build', function() {
-    const fontName = 'IconsFont';
-    return gulp.src([path.src.fontIcons])
-        .pipe(iconfontCss({
-            fontName: fontName,
-            path: './src/font_icons/templates/_icons.scss',
-            targetPath: '../../src/style/theme/_icons.scss',
-            fontPath: '../fonts/'
-        }))
-        .pipe(iconfont({
-            fontName: fontName,
-            fontHeight: 2000,
-            centerVertically: true,
-            normalize: true,
-            formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
-        }))
-        .pipe(gulp.dest(path.build.fontIcons));
-});
-
-/**
- * Build styles
- */
-gulp.task("css:build", function() {
-    return gulp
-        .src(path.src.style) 
-        .pipe(sourcemaps.init())
-        .pipe(plumber())
-        .pipe(sass({
-            includePaths: [
-                './node_modules',
-            ]
-        })) // scss -> css
-        .pipe(autoprefixer())
-        .pipe(gulp.dest(path.build.css))
-        .pipe(rename({ suffix: ".min" }))
-        .pipe(cleanCSS())
-        .pipe(sourcemaps.write("./"))
-        .pipe(gulp.dest(path.build.css))
-        .pipe(webserver.reload({ stream: true }));
-});
-
-/**
- * Build js
- */
-gulp.task("js:build", function() {
-    return gulp
-        .src(path.src.js)
-        .pipe(plumber())
-        .pipe(rigger())
-        .pipe(gulp.dest(path.build.js))
-        .pipe(sourcemaps.init())
-        .pipe(
-            minify({
-                ext: {
-                    min: ".min.js",
-                },
-                ignoreFiles: ["-min.js"],
-            })
-        )
-        .pipe(sourcemaps.write("./"))
-        .pipe(gulp.dest(path.build.js))
-        .pipe(webserver.reload({ stream: true }));
-});
-
-/**
- * Copy fonts
- */
-gulp.task("fonts:build", function() {
-    return gulp
-        .src(path.src.fonts)
-        .pipe(gulp.dest(path.build.fonts));
 });
 
 /**
@@ -195,6 +128,15 @@ gulp.task("cache:clear", function() {
 });
 
 /**
+ * Builds assets using webpack
+ */
+gulp.task('assets:build', function() {
+    return gulp.src(path.src.js)
+        .pipe(webpack(require('./webpack.config.js')))
+        .pipe(gulp.dest('dist/assets/'));
+});
+
+/**
  * Main build task
  */
 gulp.task(
@@ -203,11 +145,8 @@ gulp.task(
         "clean:build",
         gulp.parallel(
             "html:build",
-            "css:build",
-            "js:build",
-            "fonts:build",
+            "assets:build",
             "image:build",
-            "fonticons:build",
         )
     )
 );
@@ -217,11 +156,8 @@ gulp.task(
  */
 gulp.task("watch", function() {
     gulp.watch(path.watch.html, gulp.series("html:build"));
-    gulp.watch(path.watch.css, gulp.series("css:build"));
-    gulp.watch(path.watch.js, gulp.series("js:build"));
+    gulp.watch(path.watch.static, gulp.series("assets:build"));
     gulp.watch(path.watch.img, gulp.series("image:build"));
-    gulp.watch(path.watch.fonts, gulp.series("fonts:build"));
-    gulp.watch(path.watch.fontIcons, gulp.series("fonticons:build"));
 });
 
 /**

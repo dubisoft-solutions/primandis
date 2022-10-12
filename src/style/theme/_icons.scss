@@ -1,18 +1,20 @@
+
 $font-icons-family-name: "IconsFont";
 @font-face {
-	font-family: "IconsFont";
-	src: url('../fonts/IconsFont.eot');
-	src: url('../fonts/IconsFont.eot?#iefix') format('eot'),
-		url('../fonts/IconsFont.woff2') format('woff2'),
-		url('../fonts/IconsFont.woff') format('woff'),
-		url('../fonts/IconsFont.ttf') format('truetype'),
-		url('../fonts/IconsFont.svg#IconsFont') format('svg');
+    font-family: $font-icons-family-name;
+    src: url("/Users/ivan/Development/dubisoft/creavo/primandis/dist/fonts//IconsFont.eot");src: url("/Users/ivan/Development/dubisoft/creavo/primandis/dist/fonts//IconsFont.eot") format("embedded-opentype"),
+             url("/Users/ivan/Development/dubisoft/creavo/primandis/dist/fonts//IconsFont.woff2") format("woff2"),
+             url("/Users/ivan/Development/dubisoft/creavo/primandis/dist/fonts//IconsFont.woff") format("woff"),
+             url("/Users/ivan/Development/dubisoft/creavo/primandis/dist/fonts//IconsFont.ttf") format("truetype"),
+             url("/Users/ivan/Development/dubisoft/creavo/primandis/dist/fonts//IconsFont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @mixin icon-styles {
-	font-family: "IconsFont";
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
+	font-family: $font-icons-family-name;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
@@ -25,85 +27,104 @@ $font-icons-family-name: "IconsFont";
 	@include icon-styles;
 }
 
-$icon-name-accordion-arrow-down: "\E001"; 
-$icon-name-arrow-down: "\E002"; 
-$icon-name-arrow-up: "\E003"; 
-$icon-name-awesome-quote-left: "\E004"; 
-$icon-name-bag: "\E005"; 
-$icon-name-calculator: "\E006"; 
-$icon-name-checkmark-circle: "\E007"; 
-$icon-name-circle: "\E008"; 
-$icon-name-close: "\E009"; 
-$icon-name-exit: "\E00A"; 
-$icon-name-health-check: "\E00B"; 
-$icon-name-info: "\E00C"; 
-$icon-name-information-mark: "\E00D"; 
-$icon-name-information: "\E00E"; 
-$icon-name-money: "\E00F"; 
-$icon-name-percent: "\E010"; 
-$icon-name-safety: "\E011"; 
-$icon-name-search: "\E012"; 
 
+$icon-name-accordion-arrow-down: "\554a";
+$icon-name-arrow-down: "\554b";
+$icon-name-arrow-up: "\554c";
+$icon-name-awesome-quote-left: "\554d";
+$icon-name-bag: "\554e";
+$icon-name-calculator: "\554f";
+$icon-name-checkmark-circle: "\5550";
+$icon-name-circle: "\5551";
+$icon-name-close: "\5552";
+$icon-name-exit: "\5553";
+$icon-name-health-check: "\5554";
+$icon-name-info: "\5555";
+$icon-name-information-mark: "\5556";
+$icon-name-information: "\5557";
+$icon-name-money: "\5558";
+$icon-name-percent: "\5559";
+$icon-name-safety: "\555a";
+$icon-name-search: "\555b";
 
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == accordion-arrow-down {
-		$char: "\E001";
+    
+    @if $filename == accordion-arrow-down {
+		$char: $icon-name-accordion-arrow-down;
 	}
-	@if $filename == arrow-down {
-		$char: "\E002";
+    
+    @if $filename == arrow-down {
+		$char: $icon-name-arrow-down;
 	}
-	@if $filename == arrow-up {
-		$char: "\E003";
+    
+    @if $filename == arrow-up {
+		$char: $icon-name-arrow-up;
 	}
-	@if $filename == awesome-quote-left {
-		$char: "\E004";
+    
+    @if $filename == awesome-quote-left {
+		$char: $icon-name-awesome-quote-left;
 	}
-	@if $filename == bag {
-		$char: "\E005";
+    
+    @if $filename == bag {
+		$char: $icon-name-bag;
 	}
-	@if $filename == calculator {
-		$char: "\E006";
+    
+    @if $filename == calculator {
+		$char: $icon-name-calculator;
 	}
-	@if $filename == checkmark-circle {
-		$char: "\E007";
+    
+    @if $filename == checkmark-circle {
+		$char: $icon-name-checkmark-circle;
 	}
-	@if $filename == circle {
-		$char: "\E008";
+    
+    @if $filename == circle {
+		$char: $icon-name-circle;
 	}
-	@if $filename == close {
-		$char: "\E009";
+    
+    @if $filename == close {
+		$char: $icon-name-close;
 	}
-	@if $filename == exit {
-		$char: "\E00A";
+    
+    @if $filename == exit {
+		$char: $icon-name-exit;
 	}
-	@if $filename == health-check {
-		$char: "\E00B";
+    
+    @if $filename == health-check {
+		$char: $icon-name-health-check;
 	}
-	@if $filename == info {
-		$char: "\E00C";
+    
+    @if $filename == info {
+		$char: $icon-name-info;
 	}
-	@if $filename == information-mark {
-		$char: "\E00D";
+    
+    @if $filename == information-mark {
+		$char: $icon-name-information-mark;
 	}
-	@if $filename == information {
-		$char: "\E00E";
+    
+    @if $filename == information {
+		$char: $icon-name-information;
 	}
-	@if $filename == money {
-		$char: "\E00F";
+    
+    @if $filename == money {
+		$char: $icon-name-money;
 	}
-	@if $filename == percent {
-		$char: "\E010";
+    
+    @if $filename == percent {
+		$char: $icon-name-percent;
 	}
-	@if $filename == safety {
-		$char: "\E011";
+    
+    @if $filename == safety {
+		$char: $icon-name-safety;
 	}
-	@if $filename == search {
-		$char: "\E012";
+    
+    @if $filename == search {
+		$char: $icon-name-search;
 	}
+    
 
-	@return $char;
+    @return $char;
 }
 
 @mixin icon($filename, $insert: before, $extend: true) {
@@ -117,57 +138,58 @@ $icon-name-search: "\E012";
 	}
 }
 
+
 .icon-accordion-arrow-down {
-	@include icon(accordion-arrow-down);
+    @include icon(accordion-arrow-down);
 }
 .icon-arrow-down {
-	@include icon(arrow-down);
+    @include icon(arrow-down);
 }
 .icon-arrow-up {
-	@include icon(arrow-up);
+    @include icon(arrow-up);
 }
 .icon-awesome-quote-left {
-	@include icon(awesome-quote-left);
+    @include icon(awesome-quote-left);
 }
 .icon-bag {
-	@include icon(bag);
+    @include icon(bag);
 }
 .icon-calculator {
-	@include icon(calculator);
+    @include icon(calculator);
 }
 .icon-checkmark-circle {
-	@include icon(checkmark-circle);
+    @include icon(checkmark-circle);
 }
 .icon-circle {
-	@include icon(circle);
+    @include icon(circle);
 }
 .icon-close {
-	@include icon(close);
+    @include icon(close);
 }
 .icon-exit {
-	@include icon(exit);
+    @include icon(exit);
 }
 .icon-health-check {
-	@include icon(health-check);
+    @include icon(health-check);
 }
 .icon-info {
-	@include icon(info);
+    @include icon(info);
 }
 .icon-information-mark {
-	@include icon(information-mark);
+    @include icon(information-mark);
 }
 .icon-information {
-	@include icon(information);
+    @include icon(information);
 }
 .icon-money {
-	@include icon(money);
+    @include icon(money);
 }
 .icon-percent {
-	@include icon(percent);
+    @include icon(percent);
 }
 .icon-safety {
-	@include icon(safety);
+    @include icon(safety);
 }
 .icon-search {
-	@include icon(search);
+    @include icon(search);
 }
