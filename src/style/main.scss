@@ -3,9 +3,11 @@
 @import 'modules/general_custom_styles';
 
 .hero {
-    background-color: $light-blue;
+    --bs-hero-bg-color: #{$light-blue};
+
+    background-color: var(--bs-hero-bg-color);
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
