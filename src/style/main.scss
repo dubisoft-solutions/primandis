@@ -1,10 +1,8 @@
 @import 'theme/theme';
 @import 'modules/shop_page';
 @import 'modules/general_custom_styles';
-
 .hero {
     --bs-hero-bg-color: #{$light-blue};
-
     background-color: var(--bs-hero-bg-color);
     position: relative;
     min-height: 100vh;
@@ -261,7 +259,6 @@
         z-index: 0;
         object-fit: contain;
         object-position: bottom;
-
         @include media-breakpoint-down(lg) {
             bottom: 0;
         }
