@@ -83,7 +83,7 @@
         </nav>
     </header>
 
-    <section class="hero bg-primary pt-26 pb-20 position-relative">
+    <section class="hero pt-26 pb-20 position-relative">
         <div class="container ">
             <div class="row">
                 <div class="col-12">
@@ -293,15 +293,51 @@
 
 <script src="./assets/main.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            
-            if (urlParams.get("theme") == 'yellow') {
-                console.log("TODO: apply yellow theme");
-            }
-        })
-    </script>
+<script>
+    // This is the theme configuration example. In real project you need to add the
+    // <style>content like below constructed with js</style>
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const head = document.head || document.getElementsByTagName('head')[0];
+        let themeStyle = undefined;
+
+        if (urlParams.get("theme") == 'yellow') {
+            themeStyle = document.createElement('style');
+            themeStyle.appendChild(document.createTextNode(
+                `
+                        .btn-primary {
+                            --bs-btn-bg: #FF7313;
+                            --bs-btn-border-color: #FF7313;
+                        }
+
+                        .btn-link {
+                            --bs-link-color: #FF7313;
+                        }
+
+                        .hero {
+                            --bs-hero-bg-color: white;
+                        }
+
+                        .shop .products-filter-panel .filter-bg {
+                            --bs-product-filter-bg-color: #FF7313;
+                        }
+                    `
+            ));
+        }
+
+        if (themeStyle) {
+            head.appendChild(themeStyle);
+
+            // apply theme to all the links
+            // this will preserver theme switcher between pages
+            const jsLinks = document.querySelectorAll('.js-link');
+            jsLinks.forEach((jsLinkElem) => {
+                jsLinkElem.dataset.href = jsLinkElem.dataset.href + "?theme=" + urlParams.get("theme");
+            })
+        }
+    })
+</script>
 
 </html>
