@@ -215,36 +215,7 @@
 
 //= html_partials/scripts.html
 
-<script>
-    // This is the theme configuration example. In real project you need to add the
-    // <style>content like below constructed with js</style>
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const head = document.head || document.getElementsByTagName('head')[0];
-        let themeStyle = undefined;
-
-        if (urlParams.get("theme") == 'yellow') {
-            console.log("TODO: apply yellow theme");
-            themeStyle = document.createElement('style');
-            themeStyle.appendChild(document.createTextNode(
-                `
-                        .btn-link {
-                            --bs-link-color: #FF7313;
-                        }
-                        .btn-primary {
-                            --bs-btn-bg: #FF7313;
-                            --bs-btn-border-color: #FF7313;
-                        }
-                    `
-            ));
-        }
-
-        if (themeStyle) {
-            head.appendChild(themeStyle);
-        }
-    })
-</script>
+<!-- Do not include this section to prod. We use it for testing only -->
+//= html_partials/theme_script.html
 
 </html>
