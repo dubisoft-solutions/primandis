@@ -1,4 +1,21 @@
-### Primandis Template ###
+# Primandis #
+
+Markup project created by XD design mockup. Demo [link](https://dubisoft-solutions.github.io/primandis/ "Demo project link")
+
+The shop page support themes. To test the logic add to the shop page the following query parameter *?theme=yellow*
+ - Blue theme [example](https://dubisoft-solutions.github.io/primandis/shop.html "Demo project link")
+ - Yellow theme [example](https://dubisoft-solutions.github.io/primandis/shop.html?theme=yellow "Demo project link")
+
+### Technologies ###
+
+* Bootstrap 5
+* SaaS
+* Webpack
+* gulp
+
+
+
+## How to build the project? ##
 
 ### Install nodeenv ###
 
@@ -14,13 +31,17 @@ Active it
 
     . env/bin/activate
 
-### How to start the dev server for development? ###
+### Install node modules ###
 
     npm install
-    npm run dev
+    
 
 
-### How to build the assets? ###
-
+### Build assets ###
     npm run build
+
+
+### Run dev server ###
+
+    npm run dev
 
