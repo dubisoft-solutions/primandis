@@ -59,7 +59,8 @@
     }
     .products-filter-panel {
         .filter-bg {
-            background-color: $blue;
+            --bs-product-filter-bg-color: #{$blue};
+            background-color: var(--bs-product-filter-bg-color);
             border-radius: $border-radius-sm;
             box-shadow: $box-shadow-lg;
         }
